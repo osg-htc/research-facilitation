@@ -1,0 +1,37 @@
+site_name: OSG Campus Research Documentation
+site_url: https://opensciencegrid.github.io/campus-research/
+repo_url: https://github.com/opensciencegrid/campus-research/
+google_analytics: ['UA-69012-29', 'opensciencegrid.github.io']
+theme:
+  name: material
+  custom_dir: osgthedocs
+  favicon: 'img/favicon.ico'
+
+extra_css:
+  - css/extra.css
+
+pages:
+- Home: 'index.md'
+- General:
+  - 'CVMFS': 'cvmfs.md'
+- Accounts and Groups:
+  - 'General': 'general.md'
+  - 'Projects': 'projects.md'
+  - 'GoSync3': 'gosync3.md'
+- Midscale Engagements:
+  - SPT:
+    - 'General': 'midscale-experiments/spt/general.md'
+    - 'CVMFS': 'midscale-experiments/spt/cvmfs.md'
+  - VERITAS:
+    - 'General': 'midscale-experiments/spt/general.md'
+    - 'CVMFS': 'midscale-experiments/spt/cvmfs.md'
+  - XENON:
+    - 'General': 'midscale-experiments/spt/general.md'
+    - 'CVMFS': 'midscale-experiments/spt/cvmfs.md'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+     permalink: True
+  - osg_markdown.colors
