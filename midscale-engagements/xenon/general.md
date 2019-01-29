@@ -1,8 +1,0 @@
-# XENON
-
-## Requirements
-
-## Resources
-
-## Rucio
-
