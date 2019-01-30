@@ -13,11 +13,11 @@ extra_css:
 pages:
 - Home: 'index.md'
 - General:
-  - 'CVMFS': 'cvmfs.md'
+  - 'CVMFS': 'general/cvmfs.md'
 - Accounts and Groups:
-  - 'General': 'general.md'
-  - 'Projects': 'projects.md'
-  - 'GoSync3': 'gosync3.md'
+  - 'General': 'accounts-and-projects/general.md'
+  - 'Projects': 'accounts-and-projects/projects.md'
+  - 'GoSync3': 'accounts-and-projects/gosync3.md'
 - Midscale Engagements:
   - SPT:
     - 'General': 'midscale-experiments/spt/general.md'
