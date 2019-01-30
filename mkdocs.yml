@@ -20,14 +20,14 @@ pages:
   - 'GoSync3': 'accounts-and-projects/gosync3.md'
 - Midscale Engagements:
   - SPT:
-    - 'General': 'midscale-experiments/spt/general.md'
-    - 'CVMFS': 'midscale-experiments/spt/cvmfs.md'
+    - 'General': 'midscale-engagements/spt/general.md'
+    - 'CVMFS': 'midscale-engagements/spt/cvmfs.md'
   - VERITAS:
-    - 'General': 'midscale-experiments/spt/general.md'
-    - 'CVMFS': 'midscale-experiments/spt/cvmfs.md'
+    - 'General': 'midscale-engagements/veritas/general.md'
+    - 'CVMFS': 'midscale-engagements/veritas/cvmfs.md'
   - XENON:
-    - 'General': 'midscale-experiments/spt/general.md'
-    - 'CVMFS': 'midscale-experiments/spt/cvmfs.md'
+    - 'General': 'midscale-engagements/xenon/general.md'
+    - 'CVMFS': 'midscale-engagements/xenon/cvmfs.md'
 
 markdown_extensions:
   - admonition
