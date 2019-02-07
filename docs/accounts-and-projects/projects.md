@@ -25,12 +25,10 @@ Project Description:
 ```
 
 into a text file. This text file can then be past to `./add_connect_group.py` 
-in `gosync3`. This can be done on any machine that supports `gosync3`, i.e.
-any machine with Python2.7. 
+in `gosync3`. Do this on login03.osgconnect.net under `/usr/local/gosync3/`.
 
 Using the the project information text file, the group can be added to the 
 by running 
-
 
 ```
 ./add_connect_group.py --projectfile /path/to/file --parent <parent_group>
@@ -43,3 +41,4 @@ another designated user needs to be made a "Manager" in Globus.
 The project will also need to be added to the OSG topology at 
 
 https://github.com/opensciencegrid/topology/tree/master/projects
+
