@@ -26,6 +26,7 @@ Copy and paste the user's "Member Info" into a note in the account application t
 * On the "About" tab, select the name of the applicant and then click on "Member Info"
 * Copy and paste the fields (Username, Full Name, E-mail Address, etc...) into the ticket as a note
 
+**Initial Response**
 
 * Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) 
 * Do they have a Globus ID and a US institutional email?
@@ -37,11 +38,19 @@ Copy and paste the user's "Member Info" into a note in the account application t
 * If no apparent connection to US institution: 
 	* We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with  a US Institution.  Do you have an affiliation with a U.S. institution, organization, or project that was not listed on your application?
 
-### Before the meeting**
+**No response**
+
+* If someone has not responded, send a follow-up email after one-week
+	* TBD
+* If they don't respond to the second email: 
+	* Reject request in OSG Connect
+	* Change ticket to `resolved`
+
+### Before the meeting
 
 Generate the project: https://opensciencegrid.org/campus-research/accounts-and-projects/projects/ 
 
-### During meeting**
+### During meeting
 
 Onboarding discussion outline:
 
@@ -57,7 +66,7 @@ Onboarding discussion outline:
 
 ### After the meeting
 
-**Approve to enter the osg group: **
+**Approve to enter the osg group:**
 
 Do the following to add user to the newly created project
 
@@ -67,7 +76,7 @@ Do the following to add user to the newly created project
 * Click on members and click on pencil icon next to user
 * Click on Approve button
 
-**Add to their appropriate project: **
+**Add to their appropriate project:**
 
 Do the following to add user to their project (new or already generated)
 
