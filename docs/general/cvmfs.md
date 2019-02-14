@@ -1,6 +1,6 @@
 # CVMFS
 
-UChicago hosts the CVMFS origin server (osg-cvmfs.grid.uchicago.edu) for several
+UChicago hosts the CVMFS origin server (`osg-cvmfs.grid.uchicago.edu`) for several
 experiments and the OSG module system. This server is a CentOS7 VM with 
 singularity that can be used to build EL6 versions of software. The 
 repositories are associated with a respective user, e.g. 
@@ -12,10 +12,10 @@ if need be.
 ## Modules
 
 The modules are hosted out of the `connect.opensciencegrid.org` subrepo. They
-are setup using (spack)[https://spack.io/]. A good place to start understanding 
+are setup using [spack](https://spack.io/). A good place to start understanding 
 spack is the spack tutuorial available 
-(here)[https://spack.readthedocs.io/en/latest/tutorial.html]. There is a 
-(fork of spack in the OSG Connect GitHub)[https://github.com/OSGConnect/spack] 
+[here](https://spack.readthedocs.io/en/latest/tutorial.html). There is a 
+[fork of spack in the OSG Connect GitHub](https://github.com/OSGConnect/spack) 
 which contains a few necessary changes and additional packages. The main change 
 required for OSG is that CentOS instances are considered the same as RHEL or 
 SL. This is an artifact from using the python `platform` package.
