@@ -16,6 +16,7 @@ pages:
   - 'CVMFS': 'general/cvmfs.md'
 - Accounts and Groups:
   - 'General': 'accounts-and-projects/general.md'
+  - 'Accounts': 'accounts-and-projects/accounts.md'
   - 'Projects': 'accounts-and-projects/projects.md'
   - 'GoSync3': 'accounts-and-projects/gosync3.md'
 - Midscale Engagements:
