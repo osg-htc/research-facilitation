@@ -37,13 +37,14 @@ Copy and paste the user's "Member Info" into a note in the account application t
 * If no apparent connection to US institution: 
 	* We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with  a US Institution.  Do you have an affiliation with a U.S. institution, organization, or project that was not listed on your application?
 
-**Before the meeting**
+### Before the meeting**
 
 Generate the project: https://opensciencegrid.org/campus-research/accounts-and-projects/projects/ 
 
-**During meeting**
+### During meeting**
 
 Onboarding discussion outline:
+
 * Tell me about your research in general
 * How does computing fit in
 * Short term and Long term priorities
