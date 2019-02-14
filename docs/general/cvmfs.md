@@ -9,6 +9,7 @@ the relevant members of the experiments.  The VM is fairly large with 8 cores
 and 16 GB RAM. The `/cvmfs` directory is a separate disk that can be resized 
 if need be.
 
+
 ## Modules
 
 The modules are hosted out of the `connect.opensciencegrid.org` subrepo. They
