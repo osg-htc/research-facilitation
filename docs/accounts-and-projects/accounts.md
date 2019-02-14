@@ -1,26 +1,47 @@
 # Accounts
 
-Process for Creating/Onboarding New OSG Connect Users
+## Requirements for Users
+
+Users need to satisfy the following in order to be approved:
+
+* Must provide an institutional email address (e.g. user@university.edu, etc.)
+* Must apply with using globusid account
+* Must be affiliated with a US institution or research group
+
+## Process for Creating/Onboarding New OSG Connect Users
 
 1. Reply to account request to schedule engagement meeting 
 2. Meeting preparation
 3. Meet with the applicant
 4. Complete the onboarding process
 
-## Reply to Account Request to Schedule Engagement Meeting
+### Reply to Account Request to Schedule Engagement Meeting
 
-* Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) https://docs.google.com/spreadsheets/u/1/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&ouid=106257938224099124372 
+**Ticket changes**
+
+Copy and paste the user's "Member Info" into a note in the account application ticket:
+
+* Go to https://www.osgconnect.net and sign in.
+* Go to Connect > My Projects and click on the osg group.
+* On the "About" tab, select the name of the applicant and then click on "Member Info"
+* Copy and paste the fields (Username, Full Name, E-mail Address, etc...) into the ticket as a note
+
+
+* Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) 
 * Do they have a Globus ID and a US institutional email?
 * Standard response
-* If no Globus ID:
+	* TBD
+* If no institutional email or Globus ID
+	* We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
+	* We got your application to join OSG Connect.  In the application, the username is XXXXXXX.  This username is based on an institute provided ID, but it needs to be a GlobusID.  On our system it is difficult to create and maintain a unix account with a username other than a globusID.  Could you please re-apply with a globusID as username as outlined here: https://osgconnect.net/signup.  I will remove your current pending application so that you will be able to re-apply.
+* If no apparent connection to US institution: 
+	* We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with  a US Institution.  Do you have an affiliation with a U.S. institution, organization, or project that was not listed on your application?
 
-* If no institutional email:
-
-## Before the meeting
+**Before the meeting**
 
 Generate the project: https://opensciencegrid.org/campus-research/accounts-and-projects/projects/ 
 
-## During meeting
+**During meeting**
 
 Onboarding discussion outline:
 * Tell me about your research in general
@@ -33,16 +54,33 @@ Onboarding discussion outline:
 * At this point describe HTC (vs HPC if they have previous familiarity) and then OSG
 * How OSG “affects” their software, file transfer and job submission
 
-## After the meeting
+### After the meeting
 
-### Approve to enter the osg group: 
+**Approve to enter the osg group: **
 
-https://support.opensciencegrid.org/support/solutions/articles/12000047900-approving-user-applications 
+Do the following to add user to the newly created project
 
-### Add to their appropriate project: https://support.opensciencegrid.org/support/solutions/articles/12000047900-approving-user-applications 
+* Go to https://www.osgconnect.net and login as the `connect` user
+* Go to Connect > My Projects in the menu
+* Go to osg group or relevant group if applying to another group
+* Click on members and click on pencil icon next to user
+* Click on Approve button
 
-### Send follow-up email 
+**Add to their appropriate project: **
 
-that includes project-specific information: https://docs.google.com/document/d/1z9MObqfeOypO7zSyuXe2T_KgMZUe2YIYo8hCHqklXVI/edit 
+Do the following to add user to their project (new or already generated)
 
-### Paste notes into ticket
+* Go to https://www.osgconnect.com and login as the `connect` user
+* Go to Connect > My Projects in the menu
+* Scroll down to the appropriate project for the user
+* Click on members, and then the "Invite people to this group" link
+* Search for user, and then hit the send invitation button
+
+**Send follow-up email** 
+
+TBD
+
+**Ticket clean up**
+
+* Paste notes from onboarding meeting into ticket
+* If there are no outstanding issues, change the status of the ticket to "resolved" and the Type to "on-boarding X weeks".
