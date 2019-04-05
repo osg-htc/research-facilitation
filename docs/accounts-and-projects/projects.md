@@ -51,11 +51,15 @@ The project will also need to be added to the OSG topology at
 https://github.com/opensciencegrid/topology/tree/master/projects
 
 1. Clone the topology repository and `cd` into it.
-    git clone https://github.com/opensciencegrid/topology
-    cd topology
+```
+git clone https://github.com/opensciencegrid/topology
+cd topology
+```
 2. Run the "next project id" script in the bin/ directory:
-    bin/next_project_id
- That will give you the ID number for the new project.  
+```
+bin/next_project_id
+```
+That will give you the ID number for the new project.  
 3. Then, go into the projects folder and create a project 
  file. It usually makes sense to copy from another project 
  file that was also created for an OSG Connect project so the 
