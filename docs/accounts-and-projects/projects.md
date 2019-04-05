@@ -63,8 +63,7 @@ That will give you the ID number for the new project.
 3. Then, go into the projects folder and create a project 
  file. It usually makes sense to copy from another project 
  file that was also created for an OSG Connect project so the 
- sponsor information is already correct.  
- Fill in the appropriate information, including the ID number 
+ sponsor information is already correct.  Fill in the appropriate information, including the ID number 
  you got from the previous step. 
 4. Commit the new project file and submit a PR. 
 
