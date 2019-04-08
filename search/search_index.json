@@ -142,13 +142,28 @@
         }, 
         {
             "location": "/accounts-and-projects/projects/", 
-            "text": "Projects\n\n\nCreating a project in OSG Connect is fairly straightforward. The email received \nin Freshdesk entails the the information needed to create a group. Copy the \ninformation, e.g. \n\n\nYour Name: \nYour Email Address: \nProject Name: \nShort Project Name: \nField of Science: Evolutionary \nField of Science (if Other): \nPI Name: \nPI Email:\nPI Organization:\nPI Department:\nJoin Date: \nSponsor: \nOSG Sponsor Contact: \nProject Contact: \nProject Contact Email: \nTelephone Number: \nProject Description:\n\n\n\n\n\ninto a text file. This text file can then be past to \n./add_connect_group.py\n \nin \ngosync3\n. Do this on login03.osgconnect.net under \n/usr/local/gosync3/\n.\n\n\nUsing the the project information text file, the group can be added to the \nby running \n\n\n./add_connect_group.py --projectfile /path/to/file --parent \nparent_group\n\n\n\n\n\n\nAfter the project file has been created, log into Globus using \nconnect\n user and\nadd the required users to the project. Additionally, the project requestor or \nanother designated user needs to be made a \"Manager\" in Globus.\n\n\nThe project will also need to be added to the OSG topology at \n\n\nhttps://github.com/opensciencegrid/topology/tree/master/projects", 
+            "text": "Projects\n\n\nCreating a project in OSG Connect is fairly straightforward. \n\n\nCreate the project using gosync\n\n\nThe email received \nin Freshdesk entails the the information needed to create a group. Copy the \ninformation, e.g. \n\n\nYour Name: \nYour Email Address: \nProject Name: \nShort Project Name: \nField of Science: Evolutionary \nField of Science (if Other): \nPI Name: \nPI Email:\nPI Organization:\nPI Department:\nJoin Date: \nSponsor: \nOSG Sponsor Contact: \nProject Contact: \nProject Contact Email: \nTelephone Number: \nProject Description:\n\n\n\n\n\ninto a text file. This text file can then be passed to \n./add_connect_group.py\n \nin \ngosync3\n. Do this on login03.osgconnect.net under \n/usr/local/gosync3/\n.\n\n\nUsing the the project information text file, the group can be added to the \nby running \n\n\n./add_connect_group.py --projectfile /path/to/file --parent \nparent_group\n\n\n\n\n\n\nAdd the user to the project\n\n\nAfter the project file has been created, log into Globus using \nconnect\n user and\nadd the required users to the project. Additionally, the project requestor or \nanother designated user needs to be made a \"Manager\" in Globus.\n\n\nAdd the project to \ntopology\n\n\nThe project will also need to be added to the OSG topology at \n\n\nhttps://github.com/opensciencegrid/topology/tree/master/projects\n\n\n\n\nClone the topology repository and \ncd\n into it.\n\n\n\n\ngit clone https://github.com/opensciencegrid/topology\ncd topology\n\n\n\n\n\n\n\nRun the \"next project id\" script in the bin/ directory:\n\n\n\n\nbin/next_project_id\n\n\n\n\n\nThat will give you the ID number for the new project.  \n\n\n\n\n\n\nThen, go into the projects folder and create a project \n file. It usually makes sense to copy from another project \n file that was also created for an OSG Connect project so the \n sponsor information is already correct.  Fill in the appropriate information, including the ID number \n you got from the previous step. \n\n\n\n\n\n\nCommit the new project file and submit a PR.", 
             "title": "Projects"
         }, 
         {
             "location": "/accounts-and-projects/projects/#projects", 
-            "text": "Creating a project in OSG Connect is fairly straightforward. The email received \nin Freshdesk entails the the information needed to create a group. Copy the \ninformation, e.g.   Your Name: \nYour Email Address: \nProject Name: \nShort Project Name: \nField of Science: Evolutionary \nField of Science (if Other): \nPI Name: \nPI Email:\nPI Organization:\nPI Department:\nJoin Date: \nSponsor: \nOSG Sponsor Contact: \nProject Contact: \nProject Contact Email: \nTelephone Number: \nProject Description:  into a text file. This text file can then be past to  ./add_connect_group.py  \nin  gosync3 . Do this on login03.osgconnect.net under  /usr/local/gosync3/ .  Using the the project information text file, the group can be added to the \nby running   ./add_connect_group.py --projectfile /path/to/file --parent  parent_group   After the project file has been created, log into Globus using  connect  user and\nadd the required users to the project. Additionally, the project requestor or \nanother designated user needs to be made a \"Manager\" in Globus.  The project will also need to be added to the OSG topology at   https://github.com/opensciencegrid/topology/tree/master/projects", 
+            "text": "Creating a project in OSG Connect is fairly straightforward.", 
             "title": "Projects"
+        }, 
+        {
+            "location": "/accounts-and-projects/projects/#create-the-project-using-gosync", 
+            "text": "The email received \nin Freshdesk entails the the information needed to create a group. Copy the \ninformation, e.g.   Your Name: \nYour Email Address: \nProject Name: \nShort Project Name: \nField of Science: Evolutionary \nField of Science (if Other): \nPI Name: \nPI Email:\nPI Organization:\nPI Department:\nJoin Date: \nSponsor: \nOSG Sponsor Contact: \nProject Contact: \nProject Contact Email: \nTelephone Number: \nProject Description:  into a text file. This text file can then be passed to  ./add_connect_group.py  \nin  gosync3 . Do this on login03.osgconnect.net under  /usr/local/gosync3/ .  Using the the project information text file, the group can be added to the \nby running   ./add_connect_group.py --projectfile /path/to/file --parent  parent_group", 
+            "title": "Create the project using gosync"
+        }, 
+        {
+            "location": "/accounts-and-projects/projects/#add-the-user-to-the-project", 
+            "text": "After the project file has been created, log into Globus using  connect  user and\nadd the required users to the project. Additionally, the project requestor or \nanother designated user needs to be made a \"Manager\" in Globus.", 
+            "title": "Add the user to the project"
+        }, 
+        {
+            "location": "/accounts-and-projects/projects/#add-the-project-to-topology", 
+            "text": "The project will also need to be added to the OSG topology at   https://github.com/opensciencegrid/topology/tree/master/projects   Clone the topology repository and  cd  into it.   git clone https://github.com/opensciencegrid/topology\ncd topology   Run the \"next project id\" script in the bin/ directory:   bin/next_project_id  That will give you the ID number for the new project.      Then, go into the projects folder and create a project \n file. It usually makes sense to copy from another project \n file that was also created for an OSG Connect project so the \n sponsor information is already correct.  Fill in the appropriate information, including the ID number \n you got from the previous step.     Commit the new project file and submit a PR.", 
+            "title": "Add the project to topology"
         }, 
         {
             "location": "/accounts-and-projects/gosync3/", 
@@ -359,6 +374,36 @@
             "location": "/midscale-engagements/xenon/cvmfs/#dependency-list", 
             "text": "Shortened list\nROOT\nGEANT4\npython3", 
             "title": "Dependency List"
+        }, 
+        {
+            "location": "/documentation/freshdesk/", 
+            "text": "Managing Documentation in Freshdesk\n\n\nBrief overview: source for the documentation is in markdown files \nin the documentation repository.  \"Empty\" articles are created and \norganized in categories in Freshdesk. Each article has a numeric \nidentifier.  The \nfreshpush.ini\n file maps \nthe markdown documents in the repository to the appropriate numeric \nidentifier so that the content gets pushed into that article in Freshdesk. \n\n\nFor more details, see \nthis page\n.\n\n\nRelevant links: \n\n Documentation repository: https://github.com/OSGConnect/connectbook\n\n Freshdesk solutions: https://support.opensciencegrid.org/a/solutions/\n\n Rendered Docs: https://support.opensciencegrid.org/support/home\n\n Style guide: https://opensciencegrid.org/technology/documentation/style-guide/ \n\n\nAdding a Document\n\n\n\n\nClone the documentation repository if you haven't already. \n    git clone --recursive https://github.com/OSGConnect/connectbook.git\n\n\nCreate a markdown file and add content. \n\n\nCreate empty article in Freshdesk. \n\n\nAdd entry to \nupdate/freshpush.ini\n in the connectbook \nrepository\n\n\nCommit change and push changes\n    git commit -a -m \"commit message\"\n    git push origin master\n\n\n\n\nReorganizing Content\n\n\nManage folders and article hierarchy in Freshdesk.\n\n\nHave to update organization in markdown files in \nconnectbook\n \nrepository manually; however, we like to do this to make it \neasier to find the appropriate markdown file to make changes.  \n\n\nEditing a Document\n\n\nOnline OR on own computer\n\n\nhttps://support.opensciencegrid.org/support/solutions/articles/5000641843-editing-content-topics-\n\n\nArchiving or Removing a Document\n\n\n\n\nClone the documentation repository if you haven't already. \n    git clone --recursive https://github.com/OSGConnect/connectbook.git\n\n\nMove the file to the \narchive\n folder.\n    git mv document.md archive\n    git commit -a -m \"archiving document\"\n\n\nRemove that document's entry from \nupdate/freshpush.ini\n\n\nIn Freshdesk, delete the corresponding article.", 
+            "title": "Freshdesk"
+        }, 
+        {
+            "location": "/documentation/freshdesk/#managing-documentation-in-freshdesk", 
+            "text": "Brief overview: source for the documentation is in markdown files \nin the documentation repository.  \"Empty\" articles are created and \norganized in categories in Freshdesk. Each article has a numeric \nidentifier.  The  freshpush.ini  file maps \nthe markdown documents in the repository to the appropriate numeric \nidentifier so that the content gets pushed into that article in Freshdesk.   For more details, see  this page .  Relevant links:   Documentation repository: https://github.com/OSGConnect/connectbook  Freshdesk solutions: https://support.opensciencegrid.org/a/solutions/  Rendered Docs: https://support.opensciencegrid.org/support/home  Style guide: https://opensciencegrid.org/technology/documentation/style-guide/", 
+            "title": "Managing Documentation in Freshdesk"
+        }, 
+        {
+            "location": "/documentation/freshdesk/#adding-a-document", 
+            "text": "Clone the documentation repository if you haven't already. \n    git clone --recursive https://github.com/OSGConnect/connectbook.git  Create a markdown file and add content.   Create empty article in Freshdesk.   Add entry to  update/freshpush.ini  in the connectbook  repository  Commit change and push changes\n    git commit -a -m \"commit message\"\n    git push origin master", 
+            "title": "Adding a Document"
+        }, 
+        {
+            "location": "/documentation/freshdesk/#reorganizing-content", 
+            "text": "Manage folders and article hierarchy in Freshdesk.  Have to update organization in markdown files in  connectbook  \nrepository manually; however, we like to do this to make it \neasier to find the appropriate markdown file to make changes.", 
+            "title": "Reorganizing Content"
+        }, 
+        {
+            "location": "/documentation/freshdesk/#editing-a-document", 
+            "text": "Online OR on own computer  https://support.opensciencegrid.org/support/solutions/articles/5000641843-editing-content-topics-", 
+            "title": "Editing a Document"
+        }, 
+        {
+            "location": "/documentation/freshdesk/#archiving-or-removing-a-document", 
+            "text": "Clone the documentation repository if you haven't already. \n    git clone --recursive https://github.com/OSGConnect/connectbook.git  Move the file to the  archive  folder.\n    git mv document.md archive\n    git commit -a -m \"archiving document\"  Remove that document's entry from  update/freshpush.ini  In Freshdesk, delete the corresponding article.", 
+            "title": "Archiving or Removing a Document"
         }
     ]
 }

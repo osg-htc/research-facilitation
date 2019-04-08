@@ -338,9 +338,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Projects
+      </label>
+    
     <a href="./" title="Projects" class="md-nav__link md-nav__link--active">
       Projects
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-project-using-gosync" title="Create the project using gosync" class="md-nav__link">
+    Create the project using gosync
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-user-to-the-project" title="Add the user to the project" class="md-nav__link">
+    Add the user to the project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-project-to-topology" title="Add the project to topology" class="md-nav__link">
+    Add the project to topology
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -530,6 +573,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documentation/freshdesk/" title="Freshdesk" class="md-nav__link">
+      Freshdesk
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -547,6 +626,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-project-using-gosync" title="Create the project using gosync" class="md-nav__link">
+    Create the project using gosync
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-user-to-the-project" title="Add the user to the project" class="md-nav__link">
+    Add the user to the project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-the-project-to-topology" title="Add the project to topology" class="md-nav__link">
+    Add the project to topology
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -561,7 +670,9 @@
                 
                 
                 <h1 id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link">&para;</a></h1>
-<p>Creating a project in OSG Connect is fairly straightforward. The email received 
+<p>Creating a project in OSG Connect is fairly straightforward. </p>
+<h2 id="create-the-project-using-gosync">Create the project using gosync<a class="headerlink" href="#create-the-project-using-gosync" title="Permanent link">&para;</a></h2>
+<p>The email received 
 in Freshdesk entails the the information needed to create a group. Copy the 
 information, e.g. </p>
 <div class="codehilite"><pre><span></span>Your Name: 
@@ -584,7 +695,7 @@ Project Description:
 </pre></div>
 
 
-<p>into a text file. This text file can then be past to <code>./add_connect_group.py</code> 
+<p>into a text file. This text file can then be passed to <code>./add_connect_group.py</code> 
 in <code>gosync3</code>. Do this on login03.osgconnect.net under <code>/usr/local/gosync3/</code>.</p>
 <p>Using the the project information text file, the group can be added to the 
 by running </p>
@@ -592,11 +703,41 @@ by running </p>
 </pre></div>
 
 
+<h2 id="add-the-user-to-the-project">Add the user to the project<a class="headerlink" href="#add-the-user-to-the-project" title="Permanent link">&para;</a></h2>
 <p>After the project file has been created, log into Globus using <code>connect</code> user and
 add the required users to the project. Additionally, the project requestor or 
 another designated user needs to be made a "Manager" in Globus.</p>
+<h2 id="add-the-project-to-topology">Add the project to <code>topology</code><a class="headerlink" href="#add-the-project-to-topology" title="Permanent link">&para;</a></h2>
 <p>The project will also need to be added to the OSG topology at </p>
 <p>https://github.com/opensciencegrid/topology/tree/master/projects</p>
+<ol>
+<li>Clone the topology repository and <code>cd</code> into it.</li>
+</ol>
+<div class="codehilite"><pre><span></span>git clone https://github.com/opensciencegrid/topology
+cd topology
+</pre></div>
+
+
+<ol>
+<li>Run the "next project id" script in the bin/ directory:</li>
+</ol>
+<div class="codehilite"><pre><span></span>bin/next_project_id
+</pre></div>
+
+
+<p>That will give you the ID number for the new project.  </p>
+<ol>
+<li>
+<p>Then, go into the projects folder and create a project 
+ file. It usually makes sense to copy from another project 
+ file that was also created for an OSG Connect project so the 
+ sponsor information is already correct.  Fill in the appropriate information, including the ID number 
+ you got from the previous step. </p>
+</li>
+<li>
+<p>Commit the new project file and submit a PR. </p>
+</li>
+</ol>
                 
                   
                 
