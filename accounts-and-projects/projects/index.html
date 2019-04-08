@@ -670,7 +670,7 @@
                 
                 
                 <h1 id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link">&para;</a></h1>
-<p>Creating a project in OSG Connect is fairly straightforward. </p>
+<p>Creating a project in OSG Connect requires three steps.</p>
 <h2 id="create-the-project-using-gosync">Create the project using gosync<a class="headerlink" href="#create-the-project-using-gosync" title="Permanent link">&para;</a></h2>
 <p>The email received 
 in Freshdesk entails the the information needed to create a group. Copy the 
@@ -703,9 +703,20 @@ by running </p>
 </pre></div>
 
 
+<p>The "parent" is usually <code>osg</code>.</p>
 <h2 id="add-the-user-to-the-project">Add the user to the project<a class="headerlink" href="#add-the-user-to-the-project" title="Permanent link">&para;</a></h2>
-<p>After the project file has been created, log into Globus using <code>connect</code> user and
-add the required users to the project. Additionally, the project requestor or 
+<p>After the project file has been created, 
+add the required users to the project. </p>
+<ul>
+<li>Go to https://www.osgconnect.com and login as the connect user</li>
+<li>Go to Connect &gt; My Projects in the menu</li>
+<li>Click on "Groups" on the left and scroll down to the project that was just generated</li>
+<li>Click on members, and then the "Invite people to this group" link</li>
+<li>Search for user, and then hit the send invitation button</li>
+</ul>
+<p>The "invite" will <strong>automatically add</strong> the user 
+to the project group; they won't need to accept anything. </p>
+<p>Additionally, the project requestor or 
 another designated user needs to be made a "Manager" in Globus.</p>
 <h2 id="add-the-project-to-topology">Add the project to <code>topology</code><a class="headerlink" href="#add-the-project-to-topology" title="Permanent link">&para;</a></h2>
 <p>The project will also need to be added to the OSG topology at </p>
