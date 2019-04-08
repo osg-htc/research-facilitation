@@ -38,13 +38,20 @@ by running
 ./add_connect_group.py --projectfile /path/to/file --parent <parent_group>
 ```
 
+The "parent" is usually `osg`.
+
 ## Add the user to the project
 
-After the project file has been created, log into Globus using the `connect` user and
-add the required users to the project. The groups are listed on the left, 
-find the appropriate group and then click on "invite others" or a similar
-command. Search for the user and send them an invitation -- if they're
-a member of the parent group, the "invite" will **automatically add** them 
+After the project file has been created, 
+add the required users to the project. 
+
+* Go to https://www.osgconnect.com and login as the connect user
+* Go to Connect > My Projects in the menu
+* Click on "Groups" on the left and scroll down to the project that was just generated
+* Click on members, and then the "Invite people to this group" link
+* Search for user, and then hit the send invitation button
+
+The "invite" will **automatically add** the user 
 to the project group; they won't need to accept anything. 
 
 Additionally, the project requestor or 
