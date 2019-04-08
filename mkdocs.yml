@@ -29,7 +29,7 @@ pages:
   - XENON:
     - 'General': 'midscale-engagements/xenon/general.md'
     - 'CVMFS': 'midscale-engagements/xenon/cvmfs.md'
-- Documentation
+- Documentation:
   - 'Freshdesk': 'documentation/freshdesk.md'
 
 markdown_extensions:
