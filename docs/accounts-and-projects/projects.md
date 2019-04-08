@@ -1,6 +1,6 @@
 # Projects
 
-Creating a project in OSG Connect is fairly straightforward. 
+Creating a project in OSG Connect requires three steps.
 
 ## Create the project using gosync
 
@@ -40,8 +40,14 @@ by running
 
 ## Add the user to the project
 
-After the project file has been created, log into Globus using `connect` user and
-add the required users to the project. Additionally, the project requestor or 
+After the project file has been created, log into Globus using the `connect` user and
+add the required users to the project. The groups are listed on the left, 
+find the appropriate group and then click on "invite others" or a similar
+command. Search for the user and send them an invitation -- if they're
+a member of the parent group, the "invite" will **automatically add** them 
+to the project group; they won't need to accept anything. 
+
+Additionally, the project requestor or 
 another designated user needs to be made a "Manager" in Globus.
 
 ## Add the project to `topology`
@@ -69,5 +75,3 @@ That will give you the ID number for the new project.
  you got from the previous step. 
 
 4. Commit the new project file and submit a PR. 
-
-
