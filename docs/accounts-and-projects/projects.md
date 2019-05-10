@@ -28,7 +28,10 @@ Telephone Number:
 Project Description:
 ```
 
-into a text file. This text file can then be passed to `./add_connect_group.py` 
+into a text file. Note: the fields are freeform and do not need to be formatted in any specific
+way
+
+This text file can then be passed to `./add_connect_group.py` 
 in `gosync3`. Do this on login03.osgconnect.net under `/usr/local/gosync3/`.
 
 Using the the project information text file, the group can be added to the 
@@ -38,7 +41,7 @@ by running
 ./add_connect_group.py --projectfile /path/to/file --parent <parent_group>
 ```
 
-The "parent" is usually `osg`.
+The "parent_group" is usually `osg`.
 
 ## Add the user to the project
 
@@ -48,7 +51,7 @@ add the required users to the project.
 * Go to https://www.osgconnect.com and login as the connect user
 * Go to Connect > My Projects in the menu
 * Click on "Groups" on the left and scroll down to the project that was just generated
-* Click on members, and then the "Invite people to this group" link
+* Click on members, and then the "Invite others to join" link
 * Search for user, and then hit the send invitation button
 
 The "invite" will **automatically add** the user 
@@ -75,7 +78,13 @@ bin/next_project_id
 ```
 That will give you the ID number for the new project.  
 
-3. Then, go into the projects folder and create a project 
+3. To add a new project file, you will need to ensure you are working
+within your own (forked) version of the repository. If you have not already
+done so, fork the topology repository by visiting https://github.com/opensciencegrid/topology, 
+clicking "Fork". Detailed information for setting up and maintaining your fork can be found
+in the [GitHub documentation page]({% link docs/documentation/github.md %}).
+
+Within your forked repository, go into the projects folder and create a project 
  file. It usually makes sense to copy from another project 
  file that was also created for an OSG Connect project so the 
  sponsor information is already correct.  Fill in the appropriate information, including the ID number 
