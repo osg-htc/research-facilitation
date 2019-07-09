@@ -760,7 +760,7 @@ on Python 2.7 and 3.7 and only the lmod modules are enabled.</p>
 <h3 id="adding-a-module">Adding a Module<a class="headerlink" href="#adding-a-module" title="Permanent link">&para;</a></h3>
 <p>Adding a new module is fairly straight forward. On the CVMFS origin host, log 
 in as the <code>connect</code> user. Now start a CVMFS transaction:</p>
-<div class="codehilite"><pre><span></span>cvmfs_server transaction connect.opensciencegrid.org
+<div class="codehilite"><pre><span></span><span class="nv">cvmfs_server</span> <span class="nv">transaction</span> <span class="k">connect</span>.<span class="nv">opensciencegrid</span>.<span class="nv">org</span>
 </pre></div>
 
 
@@ -773,7 +773,7 @@ else can add new modules while a transaction is active. </p>
 <p>If the desired piece of software and version is available in the (spack
 package list)[https://spack.readthedocs.io/en/latest/package_list.html], simply 
 run</p>
-<div class="codehilite"><pre><span></span>spack install &lt;package&gt;@&lt;version&gt;%gcc@&lt;gcc_version&gt;
+<div class="codehilite"><pre><span></span><span class="n">spack</span> <span class="n">install</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;@&lt;</span><span class="k">version</span><span class="o">&gt;%</span><span class="n">gcc</span><span class="o">@&lt;</span><span class="n">gcc_version</span><span class="o">&gt;</span>
 </pre></div>
 
 
@@ -781,12 +781,12 @@ run</p>
 <code>$HOME/.spack/linux/compilers.yaml</code></p>
 <p>Adding a new version of a piece of software requires editing the respective 
 package file using</p>
-<div class="codehilite"><pre><span></span>spack edit &lt;package&gt;
+<div class="codehilite"><pre><span></span><span class="n">spack</span> <span class="n">edit</span> <span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span>
 </pre></div>
 
 
 <p>Adding a new package is fairly straightforward as well. Simply run</p>
-<div class="codehilite"><pre><span></span>spack create &lt;url_to_package_tarball&gt;
+<div class="codehilite"><pre><span></span><span class="n">spack</span> <span class="k">create</span> <span class="o">&lt;</span><span class="n">url_to_package_tarball</span><span class="o">&gt;</span>
 </pre></div>
 
 
