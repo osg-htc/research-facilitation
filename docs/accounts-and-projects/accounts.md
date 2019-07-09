@@ -76,6 +76,11 @@ Do the following to add user to the newly created project
 * Click on members and click on pencil icon next to user
 * Click on Approve button
 
+**Create the project:**
+
+If the user is joining a new project, it will need to be created at this point. 
+This can be completed by following the steps outlined on the [Projects documentation page]({% link docs/accounts-and-projects/projects.md %}).
+
 **Add to their appropriate project:**
 
 Do the following to add user to their project (new or already generated)
