@@ -360,15 +360,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reply-to-account-request-to-schedule-engagement-meeting" title="Reply to Account Request to Schedule Engagement Meeting" class="md-nav__link">
-    Reply to Account Request to Schedule Engagement Meeting
+  <a href="#special-cases" title="Special Cases" class="md-nav__link">
+    Special Cases
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#before-the-meeting" title="Before the meeting" class="md-nav__link">
-    Before the meeting
+  <a href="#reply-to-account-request-to-schedule-engagement-meeting" title="Reply to Account Request to Schedule Engagement Meeting" class="md-nav__link">
+    Reply to Account Request to Schedule Engagement Meeting
   </a>
   
 </li>
@@ -672,15 +672,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reply-to-account-request-to-schedule-engagement-meeting" title="Reply to Account Request to Schedule Engagement Meeting" class="md-nav__link">
-    Reply to Account Request to Schedule Engagement Meeting
+  <a href="#special-cases" title="Special Cases" class="md-nav__link">
+    Special Cases
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#before-the-meeting" title="Before the meeting" class="md-nav__link">
-    Before the meeting
+  <a href="#reply-to-account-request-to-schedule-engagement-meeting" title="Reply to Account Request to Schedule Engagement Meeting" class="md-nav__link">
+    Reply to Account Request to Schedule Engagement Meeting
   </a>
   
 </li>
@@ -733,11 +733,21 @@
 </ul>
 <h2 id="process-for-creatingonboarding-new-osg-connect-users">Process for Creating/Onboarding New OSG Connect Users<a class="headerlink" href="#process-for-creatingonboarding-new-osg-connect-users" title="Permanent link">&para;</a></h2>
 <ol>
+<li>Determine correct onboarding process</li>
 <li>Reply to account request to schedule engagement meeting </li>
 <li>Meeting preparation</li>
 <li>Meet with the applicant</li>
 <li>Complete the onboarding process</li>
 </ol>
+<h3 id="special-cases">Special Cases<a class="headerlink" href="#special-cases" title="Permanent link">&para;</a></h3>
+<p>Check to see if the account request falls under one of these special cases. If so, please follow the <a href="https://docs.google.com/spreadsheets/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&amp;ouid=107104347624934509720">Account Creation Flowchart</a> to route correctly.</p>
+<p>Special cases exist for:
+ - UChicago
+ - Duke
+ - CMS
+ - ATLAS</p>
+<p><strong> OSG User School Attendees </strong></p>
+<p>Individuals who attend the OSG User School in at UWMadison do not need an onboarding meeting and their account creation process can be streamlined.</p>
 <h3 id="reply-to-account-request-to-schedule-engagement-meeting">Reply to Account Request to Schedule Engagement Meeting<a class="headerlink" href="#reply-to-account-request-to-schedule-engagement-meeting" title="Permanent link">&para;</a></h3>
 <p><strong>Ticket changes</strong></p>
 <p>Copy and paste the user's "Member Info" into a note in the account application ticket:</p>
@@ -749,7 +759,6 @@
 </ul>
 <p><strong>Initial Response</strong></p>
 <ul>
-<li>Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) </li>
 <li>Do they have a Globus ID and a US institutional email?</li>
 <li>Standard response<ul>
 <li>TBD</li>
@@ -777,8 +786,6 @@
 </ul>
 </li>
 </ul>
-<h3 id="before-the-meeting">Before the meeting<a class="headerlink" href="#before-the-meeting" title="Permanent link">&para;</a></h3>
-<p>Generate the project: https://opensciencegrid.org/campus-research/accounts-and-projects/projects/ </p>
 <h3 id="during-meeting">During meeting<a class="headerlink" href="#during-meeting" title="Permanent link">&para;</a></h3>
 <p>Onboarding discussion outline:</p>
 <ul>
@@ -793,6 +800,10 @@
 <li>How OSG “affects” their software, file transfer and job submission</li>
 </ul>
 <h3 id="after-the-meeting">After the meeting<a class="headerlink" href="#after-the-meeting" title="Permanent link">&para;</a></h3>
+<p><strong>Add meeting notes to ticket</strong></p>
+<p>Paste meeting notes into the FreshDesk ticket as a private note.</p>
+<p><strong>Request approval from PI</strong></p>
+<p>To create new projects with a PI different than the requested user, to join existing projects, send an email to the PI to verify their approval.</p>
 <p><strong>Approve to enter the osg group:</strong></p>
 <p>Do the following to add user to the newly created project</p>
 <ul>
@@ -804,7 +815,7 @@
 </ul>
 <p><strong>Create the project:</strong></p>
 <p>If the user is joining a new project, it will need to be created at this point. 
-This can be completed by following the steps outlined on the <a href="../{% link docs/accounts-and-projects/projects.md %}">Projects documentation page</a>.</p>
+This can be completed by following the steps outlined on the <a href="https://opensciencegrid.org/campus-research/accounts-and-projects/projects/">Projects documentation page</a>.</p>
 <p><strong>Add to their appropriate project:</strong></p>
 <p>Do the following to add user to their project (new or already generated)</p>
 <ul>
@@ -815,7 +826,26 @@ This can be completed by following the steps outlined on the <a href="../{% link
 <li>Search for user, and then hit the send invitation button</li>
 </ul>
 <p><strong>Send follow-up email</strong> </p>
-<p>TBD</p>
+<p>Hi NAME OF USER,</p>
+<p>I've authorized your account in the Globus 'osg' group (for OSG Connect), and I invited you
+to join the new "GROUPNAME" group. You should have separate email that will allow you to
+accept the invite to GROUPNAME.</p>
+<p><strong>Log In</strong>
+The last step you need to log in is submitting a public ssh key -- see <a href="https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login">this page</a> for detailed
+instructions. You should be able to log into the OSG Connect login nodes
+(login.osgconnect.net) with your Globus ID (and password) within a few hours after setting
+up your ssh keys.</p>
+<p><strong>Submitting Jobs</strong>
+For job submission, I highly recommend looking through the latest <a href="https://agenda.hep.wisc.edu/event/1201/other-view">HTCondor User Tutorial</a>.
+Our <a href="https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart">OSG Connect Quickstart</a> has a few HTCondor examples, and you'll be best off by
+submitting all jobs from /local-scratch (see <a href="https://support.opensciencegrid.org/support/solutions/articles/12000006512-guidelines-for-data-managment-in-osg-storage-and-transfer">Data Management</a>).</p>
+<p>Before submitting any jobs, you’ll need to activate your project so that the required
+‘ProjectName’ attribute is automatically set for future submissions. On the login node, run:
+$ connect project</p>
+<p>Let me know how things go as you submit -- you can email us at this address
+(support@osgconnect.org) or reply to this thread. We're here to help!</p>
+<p>Cheers,</p>
+<p>STAFF MEMBER</p>
 <p><strong>Ticket clean up</strong></p>
 <ul>
 <li>Paste notes from onboarding meeting into ticket</li>
