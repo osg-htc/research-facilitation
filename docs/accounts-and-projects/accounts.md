@@ -10,10 +10,25 @@ Users need to satisfy the following in order to be approved:
 
 ## Process for Creating/Onboarding New OSG Connect Users
 
-1. Reply to account request to schedule engagement meeting 
-2. Meeting preparation
-3. Meet with the applicant
-4. Complete the onboarding process
+1. Determine correct onboarding process
+2. Reply to account request to schedule engagement meeting 
+3. Meeting preparation
+4. Meet with the applicant
+5. Complete the onboarding process
+
+### Special Cases
+
+Check to see if the account request falls under one of these special cases. If so, please follow the [Account Creation Flowchart](https://docs.google.com/spreadsheets/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&ouid=107104347624934509720) to route correctly.
+
+Special cases exist for:
+ - UChicago
+ - Duke
+ - CMS
+ - ATLAS
+ 
+** OSG User School Attendees **
+
+Individuals who attend the OSG User School in at UWMadison do not need an onboarding meeting and their account creation process can be streamlined.
 
 ### Reply to Account Request to Schedule Engagement Meeting
 
@@ -28,7 +43,6 @@ Copy and paste the user's "Member Info" into a note in the account application t
 
 **Initial Response**
 
-* Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) 
 * Do they have a Globus ID and a US institutional email?
 * Standard response
 	* TBD
@@ -46,10 +60,6 @@ Copy and paste the user's "Member Info" into a note in the account application t
 	* Reject request in OSG Connect
 	* Change ticket to `resolved`
 
-### Before the meeting
-
-Generate the project: https://opensciencegrid.org/campus-research/accounts-and-projects/projects/ 
-
 ### During meeting
 
 Onboarding discussion outline:
@@ -66,6 +76,14 @@ Onboarding discussion outline:
 
 ### After the meeting
 
+**Add meeting notes to ticket**
+
+Paste meeting notes into the FreshDesk ticket as a private note.
+
+**Request approval from PI**
+
+To create new projects with a PI different than the requested user, to join existing projects, send an email to the PI to verify their approval.
+
 **Approve to enter the osg group:**
 
 Do the following to add user to the newly created project
@@ -79,7 +97,7 @@ Do the following to add user to the newly created project
 **Create the project:**
 
 If the user is joining a new project, it will need to be created at this point. 
-This can be completed by following the steps outlined on the [Projects documentation page]({% link docs/accounts-and-projects/projects.md %}).
+This can be completed by following the steps outlined on the [Projects documentation page](https://opensciencegrid.org/campus-research/accounts-and-projects/projects/).
 
 **Add to their appropriate project:**
 
@@ -93,7 +111,33 @@ Do the following to add user to their project (new or already generated)
 
 **Send follow-up email** 
 
-TBD
+Hi NAME OF USER,
+
+I've authorized your account in the Globus 'osg' group (for OSG Connect), and I invited you
+to join the new "GROUPNAME" group. You should have separate email that will allow you to
+accept the invite to GROUPNAME.
+
+**Log In**
+The last step you need to log in is submitting a public ssh key -- see [this page](https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login) for detailed
+instructions. You should be able to log into the OSG Connect login nodes
+(login.osgconnect.net) with your Globus ID (and password) within a few hours after setting
+up your ssh keys.
+
+**Submitting Jobs**
+For job submission, I highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).
+Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and you'll be best off by
+submitting all jobs from /local-scratch (see [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000006512-guidelines-for-data-managment-in-osg-storage-and-transfer)).
+
+Before submitting any jobs, you’ll need to activate your project so that the required
+‘ProjectName’ attribute is automatically set for future submissions. On the login node, run:
+$ connect project
+
+Let me know how things go as you submit -- you can email us at this address
+(support@osgconnect.org) or reply to this thread. We're here to help!
+
+Cheers,
+
+STAFF MEMBER
 
 **Ticket clean up**
 

@@ -13,7 +13,7 @@ Your Name:
 Your Email Address: 
 Project Name: 
 Short Project Name: 
-Field of Science: Evolutionary 
+Field of Science:
 Field of Science (if Other): 
 PI Name: 
 PI Email:
@@ -28,8 +28,9 @@ Telephone Number:
 Project Description:
 ```
 
-into a text file. Note: the fields are freeform and do not need to be formatted in any specific
-way
+into a text file. Note: the fields are freeform and do not need to be formatted in any specific way
+
+Please only use [NSF-aligned Field of Sciences](https://osp.unm.edu/pi-resources/nsf-research-classifications.html) for the "Field of Science". 
 
 This text file can then be passed to `./add_connect_group.py` 
 in `gosync3`. Do this on login03.osgconnect.net under `/usr/local/gosync3/`.
