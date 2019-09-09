@@ -21,10 +21,10 @@ Users need to satisfy the following in order to be approved:
 Check to see if the account request falls under one of these special cases. If so, please follow the [Account Creation Flowchart](https://docs.google.com/spreadsheets/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&ouid=107104347624934509720) to route correctly.
 
 Special cases exist for:
- - UChicago
- - Duke
- - CMS
- - ATLAS
+* UChicago
+* Duke
+* CMS
+* ATLAS
  
 ** OSG User School Attendees **
 
