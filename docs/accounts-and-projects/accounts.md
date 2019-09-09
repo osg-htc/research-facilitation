@@ -10,10 +10,25 @@ Users need to satisfy the following in order to be approved:
 
 ## Process for Creating/Onboarding New OSG Connect Users
 
-1. Reply to account request to schedule engagement meeting 
-2. Meeting preparation
-3. Meet with the applicant
-4. Complete the onboarding process
+1. Determine correct onboarding process
+2. Reply to account request to schedule engagement meeting 
+3. Meeting preparation
+4. Meet with the applicant
+5. Complete the onboarding process
+
+### Special Cases
+
+Check to see if the account request falls under one of these special cases. If so, please follow the [Account Creation Flowchart](https://docs.google.com/spreadsheets/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&ouid=107104347624934509720) to route correctly.
+
+Special cases exist for:
+* UChicago
+* Duke
+* CMS
+* ATLAS
+ 
+** OSG User School Attendees **
+
+Individuals who attend the OSG User School in at UWMadison do not need an onboarding meeting and their account creation process can be streamlined.
 
 ### Reply to Account Request to Schedule Engagement Meeting
 
