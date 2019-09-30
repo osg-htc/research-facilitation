@@ -16,6 +16,8 @@ Users need to satisfy the following in order to be approved:
 4. Meet with the applicant
 5. Complete the onboarding process
 
+If the applicant doesn't respond to the request for the meeting, see the instructions for follow-up below. 
+
 ### Special Cases
 
 Check to see if the account request falls under one of these special cases. If so, please follow the [Account Creation Flowchart](https://docs.google.com/spreadsheets/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&ouid=107104347624934509720) to route correctly.
@@ -29,6 +31,17 @@ Special cases exist for:
 ** OSG User School Attendees **
 
 Individuals who attend the OSG User School in at UWMadison do not need an onboarding meeting and their account creation process can be streamlined.
+
+### Non-Responsive Applications
+
+If someone doesn't respond to the request for a meeting, we will send one follow-up email (a week later) and then reject the account (a week later). 
+
+1. If someone doesn't respond to the initial request, set the ticket **Type** to "on-boarding - 1 week" and close the ticket. 
+2. Once it reopens send this email. 
+> Let me know if you're still interested in scheduling a brief meeting to create an OSG Connect account.  See my previous email below for details. If we don't hear back from you, we'll close your account request in a few days. 
+3. Set the ticket to "on-boarding - 1 week" again and close the ticket again.
+4. Once it reopens, reject the person's request and send this email (optional): 
+> Since we haven’t heard from you, we’ll remove your OSG Connect account request. If you decide to pursue OSG Connect in the future, just Sign Up for an account, again.
 
 ### Reply to Account Request to Schedule Engagement Meeting
 
