@@ -50,7 +50,21 @@ Copy and paste the user's "Member Info" into a note in the account application t
 * Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) 
 * Do they have a Globus ID and a US institutional email?
 * Standard response
-	* TBD
+	* Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
+
+		See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.
+		
+		Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
+		
+		* Project Title:  (representative of your research group/org’s research priorities)
+		* PI Email: 
+		* PI Department or Organization:
+		* PI Institution:
+		* Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)
+		
+		Looking forward to meeting you soon!
+		
+		XXSIGNATUREXX
 * If no institutional email or Globus ID
 	* We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
 	* We got your application to join OSG Connect.  In the application, the username is XXXXXXX.  This username is based on an institute provided ID, but it needs to be a GlobusID.  On our system it is difficult to create and maintain a unix account with a username other than a globusID.  Could you please re-apply with a globusID as username as outlined here: https://osgconnect.net/signup.  I will remove your current pending application so that you will be able to re-apply.
