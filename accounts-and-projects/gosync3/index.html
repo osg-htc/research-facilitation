@@ -1041,56 +1041,56 @@ to get the app ID added to the system</li>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <p>The configuration is a JSON file for ease of parsing it as a dictionary. The 
 minimal configuration needed is:</p>
-<div class="codehilite"><pre><span></span>{
-  <span class="s2">&quot;</span><span class="s">users</span><span class="s2">&quot;</span>: {
-    <span class="s2">&quot;</span><span class="s">passwd_file</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">passwd_file_to_be_used</span><span class="o">&gt;</span>
-    <span class="s2">&quot;</span><span class="s">default_group</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">default_group</span> <span class="k">for</span> <span class="nv">users</span><span class="o">&gt;</span>
-  },
-  <span class="s2">&quot;</span><span class="s">groups</span><span class="s2">&quot;</span>: {
-    <span class="s2">&quot;</span><span class="s">group_file</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">group_file_to_be_used</span><span class="o">&gt;</span>
-  },
-  <span class="s2">&quot;</span><span class="s">globus</span><span class="s2">&quot;</span>: {
-    <span class="s2">&quot;</span><span class="s">groups</span><span class="s2">&quot;</span>: {
-      <span class="s2">&quot;</span><span class="s">root_group</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">root_group</span><span class="o">&gt;</span>,
-      <span class="s2">&quot;</span><span class="s">root_group_uuid</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">root_group_globus_uuid</span><span class="o">&gt;</span>
-    },
-    <span class="s2">&quot;</span><span class="s">root_user</span><span class="s2">&quot;</span>: {
-      <span class="o">//</span> <span class="nv">root</span> <span class="nv">user</span> <span class="nv">should</span> <span class="nv">only</span> <span class="nv">have</span> <span class="nv">admin</span> <span class="nv">or</span> <span class="nv">manager</span> <span class="nv">roles</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">groups</span>
-      <span class="s2">&quot;</span><span class="s">roles</span><span class="s2">&quot;</span>: [
-        <span class="s2">&quot;</span><span class="s">admin</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">manager</span><span class="s2">&quot;</span>
-      ],
-      <span class="s2">&quot;</span><span class="s">username</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">root_user</span><span class="o">&gt;</span>,
-      <span class="s2">&quot;</span><span class="s">secret</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">root_user_passwd</span><span class="o">&gt;</span>,
-      <span class="s2">&quot;</span><span class="s">auth_refresh_token</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">root_user_globus_auth_token_for_app</span><span class="o">&gt;</span>,
-      <span class="s2">&quot;</span><span class="s">nexus_refresh_token</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">root_user_globus_nexus_token_for_app</span><span class="o">&gt;</span>
-    },
-    <span class="s2">&quot;</span><span class="s">user</span><span class="s2">&quot;</span>: {
-      <span class="o">//</span> <span class="nv">regular</span> <span class="nv">user</span> <span class="nv">may</span> <span class="nv">have</span> <span class="nv">any</span> <span class="nv">role</span> <span class="nv">in</span> <span class="nv">a</span> <span class="nv">group</span>
-      <span class="s2">&quot;</span><span class="s">roles</span><span class="s2">&quot;</span>: [
-        <span class="s2">&quot;</span><span class="s">member</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">admin</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">manager</span><span class="s2">&quot;</span>
-      ]
-    },
-    <span class="s2">&quot;</span><span class="s">app</span><span class="s2">&quot;</span>: {
-      <span class="s2">&quot;</span><span class="s">scopes</span><span class="s2">&quot;</span>: [
-        <span class="s2">&quot;</span><span class="s">openid</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">profile</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">email</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">urn:globus:auth:scope:auth.globus.org:view_identities</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">urn:globus:auth:scope:transfer.api.globus.org:all</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">urn:globus:auth:scope:auth.globus.org:view_identity_set</span><span class="s2">&quot;</span>,
-        <span class="s2">&quot;</span><span class="s">urn:globus:auth:scope:nexus.api.globus.org:groups</span><span class="s2">&quot;</span>
-      ],
-      <span class="s2">&quot;</span><span class="s">client_id</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">globus_app_id_as_string</span><span class="o">&gt;</span>,
-      <span class="s2">&quot;</span><span class="s">client_secret</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">globus_app_secret_as_string</span><span class="o">&gt;</span>
-    }
-  },
-  <span class="s2">&quot;</span><span class="s">connect_db</span><span class="s2">&quot;</span>: {
-    <span class="s2">&quot;</span><span class="s">db_file</span><span class="s2">&quot;</span>: <span class="o">&lt;</span><span class="nv">json_file_to_be_used_as_connect_db</span><span class="o">&gt;</span>
-  }
-}
+<div class="codehilite"><pre><span></span><span class="err">{</span>
+<span class="err">  &quot;users&quot;: {</span>
+<span class="err">    &quot;passwd_file&quot;: &lt;passwd_file_to_be_used&gt;</span>
+<span class="err">    &quot;default_group&quot;: &lt;default_group for users&gt;</span>
+<span class="err">  },</span>
+<span class="err">  &quot;groups&quot;: {</span>
+<span class="err">    &quot;group_file&quot;: &lt;group_file_to_be_used&gt;</span>
+<span class="err">  },</span>
+<span class="err">  &quot;globus&quot;: {</span>
+<span class="err">    &quot;groups&quot;: {</span>
+<span class="err">      &quot;root_group&quot;: &lt;root_group&gt;,</span>
+<span class="err">      &quot;root_group_uuid&quot;: &lt;root_group_globus_uuid&gt;</span>
+<span class="err">    },</span>
+<span class="err">    &quot;root_user&quot;: {</span>
+<span class="err">      // root user should only have admin or manager roles in the groups</span>
+<span class="err">      &quot;roles&quot;: [</span>
+<span class="err">        &quot;admin&quot;,</span>
+<span class="err">        &quot;manager&quot;</span>
+<span class="err">      ],</span>
+<span class="err">      &quot;username&quot;: &lt;root_user&gt;,</span>
+<span class="err">      &quot;secret&quot;: &lt;root_user_passwd&gt;,</span>
+<span class="err">      &quot;auth_refresh_token&quot;: &lt;root_user_globus_auth_token_for_app&gt;,</span>
+<span class="err">      &quot;nexus_refresh_token&quot;: &lt;root_user_globus_nexus_token_for_app&gt;</span>
+<span class="err">    },</span>
+<span class="err">    &quot;user&quot;: {</span>
+<span class="err">      // regular user may have any role in a group</span>
+<span class="err">      &quot;roles&quot;: [</span>
+<span class="err">        &quot;member&quot;,</span>
+<span class="err">        &quot;admin&quot;,</span>
+<span class="err">        &quot;manager&quot;</span>
+<span class="err">      ]</span>
+<span class="err">    },</span>
+<span class="err">    &quot;app&quot;: {</span>
+<span class="err">      &quot;scopes&quot;: [</span>
+<span class="err">        &quot;openid&quot;,</span>
+<span class="err">        &quot;profile&quot;,</span>
+<span class="err">        &quot;email&quot;,</span>
+<span class="err">        &quot;urn:globus:auth:scope:auth.globus.org:view_identities&quot;,</span>
+<span class="err">        &quot;urn:globus:auth:scope:transfer.api.globus.org:all&quot;,</span>
+<span class="err">        &quot;urn:globus:auth:scope:auth.globus.org:view_identity_set&quot;,</span>
+<span class="err">        &quot;urn:globus:auth:scope:nexus.api.globus.org:groups&quot;</span>
+<span class="err">      ],</span>
+<span class="err">      &quot;client_id&quot;: &lt;globus_app_id_as_string&gt;,</span>
+<span class="err">      &quot;client_secret&quot;: &lt;globus_app_secret_as_string&gt;</span>
+<span class="err">    }</span>
+<span class="err">  },</span>
+<span class="err">  &quot;connect_db&quot;: {</span>
+<span class="err">    &quot;db_file&quot;: &lt;json_file_to_be_used_as_connect_db&gt;</span>
+<span class="err">  }</span>
+<span class="err">}</span>
 </pre></div>
 
 
@@ -1202,23 +1202,23 @@ top-level group below the root <code>connect</code> group. </p>
 <p>The project description text file should follow the format of the form on the 
 <a href="http://osgconnect.net/newproject">New Project section on the OSG Connect website</a>. 
 This will provide a text file of the following format:</p>
-<div class="codehilite"><pre><span></span><span class="nv">Your</span> <span class="nv">Name</span>: 
-<span class="nv">Your</span> <span class="nv">Email</span> <span class="nv">Address</span>: 
-<span class="nv">Project</span> <span class="nv">Name</span>: 
-<span class="nv">Short</span> <span class="nv">Project</span> <span class="nv">Name</span>: 
-<span class="nv">Field</span> <span class="nv">of</span> <span class="nv">Science</span>: <span class="nv">Evolutionary</span> 
-<span class="nv">Field</span> <span class="nv">of</span> <span class="nv">Science</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">Other</span><span class="ss">)</span>: 
-<span class="nv">PI</span> <span class="nv">Name</span>: 
-<span class="nv">PI</span> <span class="nv">Email</span>:
-<span class="nv">PI</span> <span class="nv">Organization</span>:
-<span class="nv">PI</span> <span class="nv">Department</span>:
-<span class="nv">Join</span> <span class="nv">Date</span>: 
-<span class="nv">Sponsor</span>: 
-<span class="nv">OSG</span> <span class="nv">Sponsor</span> <span class="nv">Contact</span>: 
-<span class="nv">Project</span> <span class="nv">Contact</span>: 
-<span class="nv">Project</span> <span class="nv">Contact</span> <span class="nv">Email</span>: 
-<span class="nv">Telephone</span> <span class="nv">Number</span>: 
-<span class="nv">Project</span> <span class="nv">Description</span>:
+<div class="codehilite"><pre><span></span><span class="err">Your Name: </span>
+<span class="err">Your Email Address: </span>
+<span class="err">Project Name: </span>
+<span class="err">Short Project Name: </span>
+<span class="err">Field of Science: Evolutionary </span>
+<span class="err">Field of Science (if Other): </span>
+<span class="err">PI Name: </span>
+<span class="err">PI Email:</span>
+<span class="err">PI Organization:</span>
+<span class="err">PI Department:</span>
+<span class="err">Join Date: </span>
+<span class="c">Sponsor: </span>
+<span class="err">OSG Sponsor Contact: </span>
+<span class="err">Project Contact: </span>
+<span class="err">Project Contact Email: </span>
+<span class="err">Telephone Number: </span>
+<span class="err">Project Description:</span>
 </pre></div>
 
 
@@ -1272,29 +1272,29 @@ to puppet/hiera.</p>
 <p>The <code>users</code> and <code>groups</code> dictionaries are made up of sub-dictionaries. Holding 
 the information for each user and group, respectively. The <code>users</code> dictionary 
 is a mapping of username to user information, such that:</p>
-<div class="codehilite"><pre><span></span>{
-    <span class="s2">&quot;</span><span class="s">auth_refresh_token</span><span class="s2">&quot;</span>: # <span class="nv">user</span><span class="s1">&#39;</span><span class="s">s Globus Auth refresh token</span>
-    <span class="s2">&quot;</span><span class="s">comment</span><span class="s2">&quot;</span>: # <span class="nv">user</span><span class="s1">&#39;</span><span class="s">s name</span>
-    <span class="s2">&quot;</span><span class="s">email</span><span class="s2">&quot;</span>: # <span class="nv">user</span><span class="s1">&#39;</span><span class="s">s emails</span>
-    <span class="s2">&quot;</span><span class="s">gid</span><span class="s2">&quot;</span>: # <span class="nv">default</span> <span class="nv">group</span> <span class="k">for</span> <span class="nv">passwd</span> <span class="nv">file</span>
-    <span class="s2">&quot;</span><span class="s">manage_group</span><span class="s2">&quot;</span>: # <span class="nv">puppet</span><span class="o">/</span><span class="nv">hiera</span> <span class="nv">config</span> <span class="nv">parameter</span>
-    <span class="s2">&quot;</span><span class="s">nexus_refresh_token</span><span class="s2">&quot;</span>: # <span class="nv">user</span><span class="s1">&#39;</span><span class="s">s Globus Nexus refresh token</span>
-    <span class="s2">&quot;</span><span class="s">shell</span><span class="s2">&quot;</span>: # <span class="nv">default</span> <span class="nv">user</span> <span class="nv">shell</span>
-    <span class="s2">&quot;</span><span class="s">ssh_keys</span><span class="s2">&quot;</span>: # <span class="nv">SSH</span> <span class="nv">key</span> <span class="nv">dictionary</span>, <span class="nv">explained</span> <span class="nv">below</span>
-    <span class="s2">&quot;</span><span class="s">uid</span><span class="s2">&quot;</span>: # <span class="nv">user</span><span class="s1">&#39;</span><span class="s">s UNIX id</span>
-    <span class="s2">&quot;</span><span class="s">groups</span><span class="s2">&quot;</span>: # <span class="nv">list</span> <span class="nv">of</span> <span class="nv">user</span><span class="s1">&#39;</span><span class="s">s groups,</span>
-    <span class="s2">&quot;</span><span class="s">connect_project</span><span class="s2">&quot;</span>:  # <span class="nv">Initial</span> <span class="k">connect</span> <span class="nv">project</span>, <span class="nv">typically</span> <span class="nv">osg</span>.<span class="nv">ConnectTrain</span>
-    <span class="s2">&quot;</span><span class="s">condor_schedd</span><span class="s2">&quot;</span>: # <span class="nv">The</span> <span class="nv">condor</span> <span class="nv">schedd</span> <span class="nv">to</span> <span class="nv">pick</span> <span class="nv">on</span> <span class="nv">the</span> <span class="nv">login</span> <span class="nv">host</span>
-}
+<div class="codehilite"><pre><span></span><span class="err">{</span>
+<span class="err">    &quot;auth_refresh_token&quot;: # user&#39;s Globus Auth refresh token</span>
+<span class="err">    &quot;comment&quot;: # user&#39;s name</span>
+<span class="err">    &quot;email&quot;: # user&#39;s emails</span>
+<span class="err">    &quot;gid&quot;: # default group for passwd file</span>
+<span class="err">    &quot;manage_group&quot;: # puppet/hiera config parameter</span>
+<span class="err">    &quot;nexus_refresh_token&quot;: # user&#39;s Globus Nexus refresh token</span>
+<span class="err">    &quot;shell&quot;: # default user shell</span>
+<span class="err">    &quot;ssh_keys&quot;: # SSH key dictionary, explained below</span>
+<span class="err">    &quot;uid&quot;: # user&#39;s UNIX id</span>
+<span class="err">    &quot;groups&quot;: # list of user&#39;s groups,</span>
+<span class="err">    &quot;connect_project&quot;:  # Initial connect project, typically osg.ConnectTrain</span>
+<span class="err">    &quot;condor_schedd&quot;: # The condor schedd to pick on the login host</span>
+<span class="err">}</span>
 </pre></div>
 
 
 <p>The <code>groups</code> dictionary follows a similar pattern. Mapping a group name to:</p>
-<div class="codehilite"><pre><span></span>{
-    <span class="s2">&quot;</span><span class="s">gid</span><span class="s2">&quot;</span>: # <span class="nv">group</span> <span class="nv">UNIX</span> <span class="nv">ID</span>
-    <span class="s2">&quot;</span><span class="s">num_members</span><span class="s2">&quot;</span>: # <span class="nv">Number</span> <span class="k">if</span> <span class="nv">active</span> <span class="nv">user</span> <span class="nv">according</span> <span class="nv">to</span> <span class="nv">Globus</span>
-    <span class="s2">&quot;</span><span class="s">globus_uuid</span><span class="s2">&quot;</span>: # <span class="nv">Groups</span> <span class="nv">Globus</span> <span class="nv">UUID</span>
-}
+<div class="codehilite"><pre><span></span><span class="err">{</span>
+<span class="err">    &quot;gid&quot;: # group UNIX ID</span>
+<span class="err">    &quot;num_members&quot;: # Number if active user according to Globus</span>
+<span class="err">    &quot;globus_uuid&quot;: # Groups Globus UUID</span>
+<span class="err">}</span>
 </pre></div>
 
 
@@ -1334,7 +1334,7 @@ filter out any project associated with a user school and any OSG project, if the
  user is a member of the other connect instances, i.e. SPT, ATLAS, CMS, and Duke. </p>
 <p>The <code>decompose_sshkey</code> method is necessary because of the format that 
 puppet/hiera wants the SSH key in. A typical SSH key is formatted as follows:</p>
-<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">encryption_type</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">public_key</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">idenitifier</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span></span><span class="err">&lt;encryption_type&gt; &lt;public_key&gt; &lt;idenitifier&gt;</span>
 </pre></div>
 
 
@@ -1344,11 +1344,11 @@ an optional identifier that is usually <code>&lt;username&gt;@&lt;network_hostna
 machine the key pair was generated on. </p>
 <p>Puppet/hiera wants the key in this JSON object:</p>
 <div class="codehilite"><pre><span></span><span class="err">{</span>
-    <span class="ss">&quot;&lt;identifier&gt;&quot;</span><span class="p">:</span>
-    <span class="err">{</span>
-        <span class="ss">&quot;type&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">encryption_type</span><span class="o">&gt;</span> <span class="o">#</span> <span class="n">Encryption</span> <span class="k">type</span><span class="p">,</span> <span class="n">i</span><span class="p">.</span><span class="n">e</span><span class="p">.</span> <span class="n">ssh</span><span class="o">-</span><span class="n">rsa</span><span class="p">,</span> <span class="n">ssh</span><span class="o">-</span><span class="n">dsa</span>
-        <span class="ss">&quot;key&quot;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">public_key</span><span class="o">&gt;</span> <span class="o">#</span> <span class="k">Key</span> <span class="n">part</span>
-    <span class="err">}</span>
+<span class="err">    &quot;&lt;identifier&gt;&quot;:</span>
+<span class="err">    {</span>
+<span class="err">        &quot;type&quot;: &lt;encryption_type&gt; # Encryption type, i.e. ssh-rsa, ssh-dsa</span>
+<span class="err">        &quot;key&quot;: &lt;public_key&gt; # Key part</span>
+<span class="err">    }</span>
 <span class="err">}</span>
 </pre></div>
 

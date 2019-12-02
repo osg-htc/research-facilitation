@@ -675,23 +675,23 @@
 <p>The email received 
 in Freshdesk entails the the information needed to create a group. Copy the 
 information, e.g. </p>
-<div class="codehilite"><pre><span></span><span class="nv">Your</span> <span class="nv">Name</span>: 
-<span class="nv">Your</span> <span class="nv">Email</span> <span class="nv">Address</span>: 
-<span class="nv">Project</span> <span class="nv">Name</span>: 
-<span class="nv">Short</span> <span class="nv">Project</span> <span class="nv">Name</span>: 
-<span class="nv">Field</span> <span class="nv">of</span> <span class="nv">Science</span>:
-<span class="nv">Field</span> <span class="nv">of</span> <span class="nv">Science</span> <span class="ss">(</span><span class="k">if</span> <span class="nv">Other</span><span class="ss">)</span>: 
-<span class="nv">PI</span> <span class="nv">Name</span>: 
-<span class="nv">PI</span> <span class="nv">Email</span>:
-<span class="nv">PI</span> <span class="nv">Organization</span>:
-<span class="nv">PI</span> <span class="nv">Department</span>:
-<span class="nv">Join</span> <span class="nv">Date</span>: 
-<span class="nv">Sponsor</span>: 
-<span class="nv">OSG</span> <span class="nv">Sponsor</span> <span class="nv">Contact</span>: 
-<span class="nv">Project</span> <span class="nv">Contact</span>: 
-<span class="nv">Project</span> <span class="nv">Contact</span> <span class="nv">Email</span>: 
-<span class="nv">Telephone</span> <span class="nv">Number</span>: 
-<span class="nv">Project</span> <span class="nv">Description</span>:
+<div class="codehilite"><pre><span></span><span class="err">Your Name: </span>
+<span class="err">Your Email Address: </span>
+<span class="err">Project Name: </span>
+<span class="err">Short Project Name: </span>
+<span class="err">Field of Science:</span>
+<span class="err">Field of Science (if Other): </span>
+<span class="err">PI Name: </span>
+<span class="err">PI Email:</span>
+<span class="err">PI Organization:</span>
+<span class="err">PI Department:</span>
+<span class="err">Join Date: </span>
+<span class="c">Sponsor: </span>
+<span class="err">OSG Sponsor Contact: </span>
+<span class="err">Project Contact: </span>
+<span class="err">Project Contact Email: </span>
+<span class="err">Telephone Number: </span>
+<span class="err">Project Description:</span>
 </pre></div>
 
 
@@ -701,7 +701,7 @@ information, e.g. </p>
 in <code>gosync3</code>. Do this on login03.osgconnect.net under <code>/usr/local/gosync3/</code>.</p>
 <p>Using the the project information text file, the group can be added to the 
 by running </p>
-<div class="codehilite"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="n">add_connect_group</span><span class="p">.</span><span class="n">py</span> <span class="c1">--projectfile /path/to/file --parent &lt;parent_group&gt;</span>
+<div class="codehilite"><pre><span></span><span class="err">./add_connect_group.py --projectfile /path/to/file --parent &lt;parent_group&gt;</span>
 </pre></div>
 
 
@@ -726,15 +726,15 @@ another designated user needs to be made a "Manager" in Globus.</p>
 <ol>
 <li>Clone the topology repository and <code>cd</code> into it.</li>
 </ol>
-<div class="codehilite"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">opensciencegrid</span><span class="o">/</span><span class="n">topology</span>
-<span class="n">cd</span> <span class="n">topology</span>
+<div class="codehilite"><pre><span></span><span class="err">git clone https://github.com/opensciencegrid/topology</span>
+<span class="err">cd topology</span>
 </pre></div>
 
 
 <ol>
 <li>Run the "next project id" script in the bin/ directory:</li>
 </ol>
-<div class="codehilite"><pre><span></span><span class="n">bin</span><span class="o">/</span><span class="n">next_project_id</span>
+<div class="codehilite"><pre><span></span><span class="err">bin/next_project_id</span>
 </pre></div>
 
 
