@@ -44,7 +44,9 @@ into the ticket as a note.
 the button with three dots at the end of the list of ticket actions, click on it 
 and choose "Edit Ticket Details"
 
-Search for the person's email address. If it doesn't show up, you'll have to create 
+	![Edit Ticket Screenshot](/images/edit-ticket.png)
+
+	Search for the person's email address. If it doesn't show up, you'll have to create 
 a new contact. Fill in the information, and click save. Strangely, if you create a 
 new contact, it doesn't set that person as the new contact on the first try - if you 
 create a new contact, you have to click on "Edit Ticket Details" **again**, then 
