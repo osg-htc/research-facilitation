@@ -47,6 +47,7 @@ Copy and paste the user's "Member Info" into a note in the account application t
 
 **Initial Response**
 
+* Does it look like they are a member of one of the special projects / Connect groups (Duke, Chicago, etc.) 
 * Do they have a Globus ID and a US institutional email?
 * Standard response
 	* Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
@@ -83,6 +84,10 @@ If someone doesn't respond to the request for a meeting, we will send one follow
 4. Once it reopens, reject the person's request and send this email (optional): 
 > Since we haven’t heard from you, we’ll remove your OSG Connect account request. If you decide to pursue OSG Connect in the future, just Sign Up for an account, again.
 
+### Before the meeting
+
+Generate the project: https://opensciencegrid.org/campus-research/accounts-and-projects/projects/ 
+
 ### During meeting
 
 Onboarding discussion outline:
@@ -99,14 +104,6 @@ Onboarding discussion outline:
 
 ### After the meeting
 
-**Add meeting notes to ticket**
-
-Paste meeting notes into the FreshDesk ticket as a private note.
-
-**Request approval from PI**
-
-To create new projects with a PI different than the requested user, to join existing projects, send an email to the PI to verify their approval.
-
 **Approve to enter the osg group:**
 
 Do the following to add user to the newly created project
@@ -120,7 +117,7 @@ Do the following to add user to the newly created project
 **Create the project:**
 
 If the user is joining a new project, it will need to be created at this point. 
-This can be completed by following the steps outlined on the [Projects documentation page](https://opensciencegrid.org/campus-research/accounts-and-projects/projects/).
+This can be completed by following the steps outlined on the [Projects documentation page]({% link docs/accounts-and-projects/projects.md %}).
 
 **Add to their appropriate project:**
 

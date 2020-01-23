@@ -2,41 +2,63 @@
 
 Creating a project in OSG Connect requires three steps.
 
-## Create the project on the portal
+## Create the project using gosync
 
-To create a new project using the OSGConnect.net portal, click "Create Project" button in the 
-Admin panel on osgconnect.net.
-
-Complete the provided form. You will need the following information:
+The email received 
+in Freshdesk entails the the information needed to create a group. Copy the 
+information, e.g. 
 
 ```
-Requester Name: 
-Requester Email Address: 
-Project Name (short project name): 
-Display Name (descriptive project name): 
-Field of Science:
+Your Name: 
+Your Email Address: 
+Project Name: 
+Short Project Name: 
+Field of Science: Evolutionary 
+Field of Science (if Other): 
 PI Name: 
 PI Email:
 PI Organization:
+PI Department:
+Join Date: 
+Sponsor: 
+OSG Sponsor Contact: 
+Project Contact: 
+Project Contact Email: 
+Telephone Number: 
 Project Description:
 ```
 
-Please only use [NSF-aligned Field of Sciences](https://osp.unm.edu/pi-resources/nsf-research-classifications.html) 
-for the "Field of Science". 
+into a text file. Note: the fields are freeform and do not need to be formatted in any specific
+way
 
-Click "Submit" to add the new project.
+This text file can then be passed to `./add_connect_group.py` 
+in `gosync3`. Do this on login03.osgconnect.net under `/usr/local/gosync3/`.
+
+Using the the project information text file, the group can be added to the 
+by running 
+
+```
+./add_connect_group.py --projectfile /path/to/file --parent <parent_group>
+```
+
+The "parent_group" is usually `osg`.
 
 ## Add the user to the project
 
-After the project file has been created, add the required users to the project. 
-If you are doing this step immediately after creating the project, skip to step <<number>> below
+After the project file has been created, 
+add the required users to the project. 
 
-1. Go to https://www.osgconnect.net and login
-2. Click on the "Projects" tab on the Admin panel
-3. Find the new project, using "Search" if desired, and open the project by clicking on the long name
-4. Click on the "Add Members" and find the target user, using "Search" if desired/necessary
-5. Add the user to the project by clicking the "Add Member" button next to their entry
+* Go to https://www.osgconnect.com and login as the connect user
+* Go to Connect > My Projects in the menu
+* Click on "Groups" on the left and scroll down to the project that was just generated
+* Click on members, and then the "Invite others to join" link
+* Search for user, and then hit the send invitation button
 
+The "invite" will **automatically add** the user 
+to the project group; they won't need to accept anything. 
+
+Additionally, the project requestor or 
+another designated user needs to be made a "Manager" in Globus.
 
 ## Add the project to `topology`
 
@@ -62,14 +84,10 @@ done so, fork the topology repository by visiting https://github.com/openscience
 clicking "Fork". Detailed information for setting up and maintaining your fork can be found
 in the [GitHub documentation page]({% link docs/documentation/github.md %}).
 
-Within your forked repository, go into the projects folder and create a project file. 
-The project file should be named the same as the short (UNIX) project name. 
-It usually makes sense to copy from another project 
-file that was also created for an OSG Connect project so the 
-sponsor information is already correct.  Fill in the appropriate information, including the ID number 
-you got from the previous step.
-
-In order to maintain consistancy in organization naming structure, please use the `bin/list_organizations` 
-function to ensure the name you are using matches this list.
+Within your forked repository, go into the projects folder and create a project 
+ file. It usually makes sense to copy from another project 
+ file that was also created for an OSG Connect project so the 
+ sponsor information is already correct.  Fill in the appropriate information, including the ID number 
+ you got from the previous step. 
 
 4. Commit the new project file and submit a PR. 
