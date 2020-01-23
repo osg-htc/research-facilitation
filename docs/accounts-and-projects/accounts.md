@@ -65,9 +65,11 @@ Copy and paste the user's "Member Info" into a note in the account application t
 		Looking forward to meeting you soon!
 		
 		XXSIGNATUREXX
+		
 * If no institutional email or Globus ID
 	* We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
 	* We got your application to join OSG Connect.  In the application, the username is XXXXXXX.  This username is based on an institute provided ID, but it needs to be a GlobusID.  On our system it is difficult to create and maintain a unix account with a username other than a globusID.  Could you please re-apply with a globusID as username as outlined here: https://osgconnect.net/signup.  I will remove your current pending application so that you will be able to re-apply.
+	
 * If no apparent connection to US institution: 
 	* We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?
 
@@ -129,7 +131,32 @@ Do the following to add user to their project (new or already generated)
 
 **Send follow-up email** 
 
-TBD
+Hi NAME OF USER,
+
+I've authorized your account in the Globus 'osg' group (for OSG Connect, which you should receive a confirmation email for), and I invited you
+to join the new "GROUPNAME" group project. You should have second email inviting you to accept this invitation to your project.
+
+**Log In**
+The last step you need to log in is submitting a public ssh key -- see [this page](https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login) for detailed
+instructions. You should be able to log into the OSG Connect login nodes
+(login.osgconnect.net) with your Globus ID (and password) within a few hours after setting
+up your ssh keys.
+
+**Submitting Jobs**
+For job submission, I highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).
+Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and you'll be best off by
+submitting all jobs from /local-scratch (see [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000006512-guidelines-for-data-managment-in-osg-storage-and-transfer)).
+
+Before submitting any jobs, you’ll need to activate your project so that the required
+‘ProjectName’ attribute is automatically set for future submissions. On the login node, run:
+$ connect project
+
+Let me know how things go as you submit -- you can email us at this address
+(support@osgconnect.net) or reply to this thread. We're here to help!
+
+Cheers,
+
+STAFF MEMBER
 
 **Ticket clean up**
 
