@@ -21,7 +21,7 @@ If the applicant doesn't respond to the request for the meeting, see the instruc
 
 Check to see if the account request falls under one of these special cases. If so, please follow the [Account Creation Flowchart](https://docs.google.com/spreadsheets/d/1x-ttoFxE7VlMUKyEKa_u454yd_UIdFgiLfdJj0zcBkM/edit?usp=drive_web&ouid=107104347624934509720) to route correctly.
 
-Special cases exist for:
+**Special Cases**
 
 * UChicago (Xenon1T, South Pole Telescope)
 * Duke
@@ -29,7 +29,7 @@ Special cases exist for:
 * ATLAS
 * Jefferson Lab
  
-** OSG User School Attendees **
+**OSG User School Attendees**
 
 Individuals who attend the OSG User School in at UWMadison do not need an onboarding meeting and their account creation process can be streamlined.
 
@@ -56,27 +56,27 @@ search for the email (which now exists as a contact), select it, and then click 
 
 * Do they have US institutional email?
 * Standard response (also in the User Support's Canned Responses "New Account Request - schedule initial meeting")
-	* Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
-
-		See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.
-		
-		Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
-		
-		* Project Title:  (representative of your research group/org’s research priorities)
-		* PI Email: 
-		* PI Department or Organization:
-		* PI Institution:
-		* Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)
-		
-		Looking forward to meeting you soon!
-		
-		XXSIGNATUREXX
+	> Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
+	> 
+	> See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.
+	> 
+	> Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
+	> 
+	> * Project Title:  (representative of your research group/org’s research priorities)
+	> * PI Email: 
+	> * PI Department or Organization:
+	> * PI Institution:
+	> * Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)
+	> 
+	> Looking forward to meeting you soon!
+	> 
+	> XXSIGNATUREXX
 		
 * If no institutional email (Canned Responses: "New Account Request - non-institutional email")
-	* We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
+	> We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
 	
 * If no apparent connection to US institution (Canned Responses: "New Account Request - non US") 
-	* We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?
+	> We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?
 
 **Non-Responsive Applications**
 
@@ -145,7 +145,7 @@ the first of their group, choose `login05`.
 
 Send the following email to the new user (Canned Responses: "New Account Request - welcome email")
 
-* Hi NAME OF USER,
+> Hi NAME OF USER,
 
 	I've authorized your account in the Globus 'osg' group (for OSG Connect, which you should receive a confirmation email for), and I invited you
 	to join the new "GROUPNAME" group project. You should have second email inviting you to accept this invitation to your project.
