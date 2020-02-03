@@ -40,17 +40,10 @@ Individuals who attend the OSG User School in at UWMadison do not need an onboar
 - Copy and paste the user's information from the ["Pending Members" page](https://www.osgconnect.net/groups/root.osg/members-requests) 
 into the ticket as a note. 
 
-- The default ticket has the primary requester as the website API address. Go to 
-the button with three dots at the end of the list of ticket actions, click on it 
-and choose "Edit Ticket Details"
-
-	![Edit Ticket Screenshot](/images/edit-ticket.png)
-
-	Search for the person's email address. If it doesn't show up, you'll have to create 
-a new contact. Fill in the information, and click save. Strangely, if you create a 
-new contact, it doesn't set that person as the new contact on the first try - if you 
-create a new contact, you have to click on "Edit Ticket Details" **again**, then 
-search for the email (which now exists as a contact), select it, and then click Save. 
+- The default ticket has the primary requester as the website API address. In your 
+initial response, please: 
+    - **Forward** the ticket to the requestor, instead of replying
+    - use the "Edit ticket" button to change the requestor
 
 **Initial Response**
 
