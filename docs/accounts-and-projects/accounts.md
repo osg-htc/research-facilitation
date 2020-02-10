@@ -37,13 +37,8 @@ Individuals who attend the OSG User School in at UWMadison do not need an onboar
 
 **Ticket changes**
 
-- Copy and paste the user's information from the ["Pending Members" page](https://www.osgconnect.net/groups/root.osg/members-requests) 
+Copy and paste the user's information from the ["Pending Members" page](https://www.osgconnect.net/groups/root.osg/members-requests) 
 into the ticket as a note. 
-
-- The default ticket has the primary requester as the website API address. In your 
-initial response, please: 
-    - **Forward** the ticket to the requestor, instead of replying
-    - use the "Edit ticket" button to change the requestor
 
 **Initial Response**
 
@@ -145,9 +140,10 @@ Send the following email to the new user (Canned Responses: "New Account Request
 
 	**Log In**
 	The last step you need to log in is submitting a public ssh key -- see [this page](https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login) for detailed
-	instructions. You should be able to log into the OSG Connect login nodes
-	(login.osgconnect.net) with your Globus ID (and password) within a few hours after setting
-	up your ssh keys.
+	instructions. You should be able to log into an OSG Connect login node
+	with your Globus ID (and password) within an hour after setting
+	up your ssh keys. You can find which login node to use by logging into the 
+	OSG Connect website (osgconnect.net) and looking on the left-hand side of your profile. 
 
 	**Submitting Jobs**
 	For job submission, I highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).
