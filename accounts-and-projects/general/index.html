@@ -333,8 +333,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-accounts-in-osg-connect" title="Creating Accounts in OSG Connect" class="md-nav__link">
-    Creating Accounts in OSG Connect
+  <a href="#creating-accounts-in-osg-connect" title="Creating Accounts in OSG Connect." class="md-nav__link">
+    Creating Accounts in OSG Connect.
   </a>
   
 </li>
@@ -650,8 +650,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-accounts-in-osg-connect" title="Creating Accounts in OSG Connect" class="md-nav__link">
-    Creating Accounts in OSG Connect
+  <a href="#creating-accounts-in-osg-connect" title="Creating Accounts in OSG Connect." class="md-nav__link">
+    Creating Accounts in OSG Connect.
   </a>
   
 </li>
@@ -710,26 +710,21 @@
                 
                 
                 <h1 id="osg-user-support-internal-documentation">OSG User Support Internal Documentation<a class="headerlink" href="#osg-user-support-internal-documentation" title="Permanent link">&para;</a></h1>
-<h2 id="creating-accounts-in-osg-connect">Creating Accounts in OSG Connect<a class="headerlink" href="#creating-accounts-in-osg-connect" title="Permanent link">&para;</a></h2>
+<h2 id="creating-accounts-in-osg-connect">Creating Accounts in OSG Connect.<a class="headerlink" href="#creating-accounts-in-osg-connect" title="Permanent link">&para;</a></h2>
 <p>The account creation workflow for OSG Connect follows a fairly straightforward 
 workflow:</p>
 <ol>
 <li>Users enter through one of the Connect websites, e.g. www.osgconnect.net</li>
-<li>The user creates a Globus ID</li>
-<li>User applies for membership in the respective top-level connect project, 
-e.g. <code>osg</code> for OSG Connect <em>with their Globus ID</em></li>
-<li>E-mail gets sent to "Manager"s and "Admin"s of the top-level connect project 
+<li>The default should be that they sign in via CILogon, using their institutional identity. 
+If they don't have an institution that's part of CILogon, they should use Globus. </li>
+<li>Completing the login steps will generate a profile that is "pending" in the osg group 
+(which represents all accounts on OSG Connect)</li>
+<li>An e-mail gets sent to "Manager"s and "Admin"s of the top-level connect project 
 and a ticket gets created in FreshDesk</li>
-<li>A designated OSG user support staff member contacts the user</li>
-<li>The designated OSG user support staff member approves the user adds the 
-user to the required project, e.g. osg.Biograph for members of Alex Feltus'
-group at Clemson</li>
-<li>If there is no sub-project available, the user will have request a project
-to be created</li>
-<li>Once every hour the user and project list is synced from Globus to a <code>json</code>
-file on <code>service.ci-connect.net</code></li>
-<li>Puppet/heira will check the <code>json</code> file and creat missing users and groups 
-as needed.</li>
+<li>At this point, a member of the OSG support team steps in and follows the steps 
+listed in the <a href="../../accounts">guide on creating new accounts</a></li>
+<li>After the account has been approved, a login node assigned, and an ssh key uploaded, 
+the person's account should be generated on the appropriate login node within 30 minutes. </li>
 </ol>
 <h2 id="updating-accounts-in-osg-connect">Updating Accounts in OSG Connect<a class="headerlink" href="#updating-accounts-in-osg-connect" title="Permanent link">&para;</a></h2>
 <p>The only updates that need to be made to a user account are:</p>
@@ -737,8 +732,8 @@ as needed.</li>
 <li>Change SSH key</li>
 </ol>
 <p>Changing the user SSH key needs to be performed by the user by going to
-https://portal.osgconnect.net/globus-app/account and add/remove the SSH key
-in the "Manage SSH and X.509 keys" window.</p>
+https://www.osgconnect.net/profile, clicking on "Edit Profile" and then 
+adding or changing their ssh key. </p>
 <ol>
 <li>Change project membership</li>
 </ol>
@@ -753,7 +748,7 @@ the user will receive and email and have to accept the invitation. </p>
 <li>Delete user</li>
 </ol>
 <p>To delete a user, the "Manager"/"Admin" can simply remove the user from the 
-project.</p>
+project. </p>
 <p>In all these cases, the synchronization step will propagate the changes from 
 Globus through the <code>json</code> file to puppet and ultimately the servers. </p>
 <h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h2>
