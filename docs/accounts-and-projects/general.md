@@ -1,26 +1,21 @@
 # OSG User Support Internal Documentation
 
-## Creating Accounts in OSG Connect
+## Creating Accounts in OSG Connect. 
 
 The account creation workflow for OSG Connect follows a fairly straightforward 
 workflow:
 
 1. Users enter through one of the Connect websites, e.g. www.osgconnect.net
-2. The user creates a Globus ID
-3. User applies for membership in the respective top-level connect project, 
-e.g. `osg` for OSG Connect *with their Globus ID*
-4. E-mail gets sent to "Manager"s and "Admin"s of the top-level connect project 
+2. The default should be that they sign in via CILogon, using their institutional identity. 
+If they don't have an institution that's part of CILogon, they should use Globus. 
+3. Completing the login steps will generate a profile that is "pending" in the osg group 
+(which represents all accounts on OSG Connect)
+4. An e-mail gets sent to "Manager"s and "Admin"s of the top-level connect project 
 and a ticket gets created in FreshDesk
-5. A designated OSG user support staff member contacts the user
-6. The designated OSG user support staff member approves the user adds the 
-user to the required project, e.g. osg.Biograph for members of Alex Feltus'
-group at Clemson
-7. If there is no sub-project available, the user will have request a project
-to be created
-8. Once every hour the user and project list is synced from Globus to a `json`
-file on `service.ci-connect.net`
-9. Puppet/heira will check the `json` file and creat missing users and groups 
-as needed.
+5. At this point, a member of the OSG support team steps in and follows the steps 
+listed in the [guide on creating new accounts](../accounts)
+6. After the account has been approved, a login node assigned, and an ssh key uploaded, 
+the person's account should be generated on the appropriate login node within 30 minutes. 
 
 ## Updating Accounts in OSG Connect
 
@@ -29,8 +24,8 @@ The only updates that need to be made to a user account are:
 1. Change SSH key
 
 Changing the user SSH key needs to be performed by the user by going to
-https://portal.osgconnect.net/globus-app/account and add/remove the SSH key
-in the "Manage SSH and X.509 keys" window.
+https://www.osgconnect.net/profile, clicking on "Edit Profile" and then 
+adding or changing their ssh key. 
 
 2. Change project membership
 
@@ -45,7 +40,7 @@ the user will receive and email and have to accept the invitation.
 3. Delete user
 
 To delete a user, the "Manager"/"Admin" can simply remove the user from the 
-project.
+project. 
 
 In all these cases, the synchronization step will propagate the changes from 
 Globus through the `json` file to puppet and ultimately the servers. 
