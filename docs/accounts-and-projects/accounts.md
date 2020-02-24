@@ -59,6 +59,7 @@ into the ticket as a note.
 	> Looking forward to meeting you soon!
 	> 
 	> XXSIGNATUREXX
+
 		
 * If no institutional email (Canned Responses: "New Account Request - non-institutional email")
 	> We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
@@ -76,6 +77,7 @@ If someone doesn't respond to the request for a meeting, we will send one follow
 3. Set the ticket to "on-boarding - 1 week" again and close the ticket again.
 4. Once it reopens, reject the person's request and send this email (optional, Canned Responses: "New Account Request - no response, closing""): 
 > Since we haven’t heard from you, we’ll remove your OSG Connect account request. If you decide to pursue OSG Connect in the future, just Sign Up for an account, again.
+
 
 ### 3. Meet with the Applicant
 
@@ -102,6 +104,7 @@ Sample onboarding discussion outline:
 
 To create new projects with a PI different than the requested user, to join existing projects, send an email to the PI to verify their approval. 
 
+
 **Approve to enter the osg group:**
 
 Go to the "[Pending Members](https://www.osgconnect.net/groups/root.osg/members-requests)" page of the OSG project and click the "Approve" button 
@@ -110,7 +113,7 @@ for the user.
 **Create a project:**
 
 If the user is joining a new project, it will need to be created at this point. 
-This can be completed by following the steps outlined on the [Projects documentation page](https://opensciencegrid.org/campus-research/accounts-and-projects/projects/).
+This can be completed by following the steps outlined on the [Projects documentation page]({% link docs/accounts-and-projects/projects.md %}).
 
 **Add to their appropriate project:**
 
@@ -149,6 +152,7 @@ Send the following email to the new user (Canned Responses: "New Account Request
 	For job submission, I highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).
 	Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and you'll be best off by
 	submitting all jobs from /local-scratch (see [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg)).
+  
 
 	Before submitting any jobs, you’ll need to activate your project so that the required
 	‘ProjectName’ attribute is automatically set for future submissions. On the login node, run:
