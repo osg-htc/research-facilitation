@@ -62,7 +62,7 @@ into the ticket as a note.
 
 		
 * If no institutional email (Canned Responses: "New Account Request - non-institutional email")
-	> We received your application to join OSG Connect.  The email you used for the account application is a XXXXX address.  Could you please re-apply and this time supply your XXXXX University email address so that we can verify your affiliation?  I will remove the current application so that you will be able to re-apply. 
+	> We received your application to join OSG Connect. A requirement for using OSG Connect is that you be affiliated with a United States academic, non-profit, or government organization. One way that we verify this affiliation is through an institutional/university email address. Can you please re-apply using your institutional email in the E-mail address field?  It may require logging out of the osgconnect.net web portal and logging in again with your institutional credentials.  On the login page, where it says “Use your existing organizational login,” please select your institution from the drop-down menu and then “continue.”  Please let me know if your institution is not listed.  I will remove your current application so that you will be able to re-apply.  
 	
 * If no apparent connection to US institution (Canned Responses: "New Account Request - non US") 
 	> We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?
