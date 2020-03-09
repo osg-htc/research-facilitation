@@ -44,28 +44,32 @@ into the ticket as a note.
 
 * Do they have US institutional email?
 * Standard response (also in the User Support's Canned Responses "New Account Request - schedule initial meeting")
-	> Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
-	> 
-	> See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.
-	> 
-	> Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
-	> 
-	> * Project Title:  (representative of your research group/org’s research priorities)
-	> * PI Email: 
-	> * PI Department or Organization:
-	> * PI Institution:
-	> * Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)
-	> 
-	> Looking forward to meeting you soon!
-	> 
-	> XXSIGNATUREXX
-
-		
+	
+> Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
+>	
+> See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.
+>	
+> Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
+>
+> * Project Title:  (representative of your research group/org’s research priorities)
+> * PI Email: 	
+> * PI Department or Organization:
+> * PI Institution:
+> * Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)
+> 
+> Looking forward to meeting you soon!
+>	 
+> XXSIGNATUREXX
+	
 * If no institutional email (Canned Responses: "New Account Request - non-institutional email")
-	> We received your application to join OSG Connect. A requirement for using OSG Connect is that you be affiliated with a United States academic, non-profit, or government organization. One way that we verify this affiliation is through an institutional/university email address. Can you please re-apply using your institutional email in the E-mail address field?  It may require logging out of the osgconnect.net web portal and logging in again with your institutional credentials.  On the login page, where it says “Use your existing organizational login,” please select your institution from the drop-down menu and then “continue.”  Please let me know if your institution is not listed.  I will remove your current application so that you will be able to re-apply.  
+	
+> We received your application to join OSG Connect. A requirement for using OSG Connect is that you be affiliated with a United States academic, non-profit, or government organization. One way that we verify this affiliation is through an institutional/university email address. 
+>	
+> Can you please re-apply using your institutional email in the E-mail address field?  It may require logging out of the osgconnect.net web portal and logging in again with your institutional credentials.  On the login page, where it says “Use your existing organizational login,” please select your institution from the drop-down menu and then “continue.”  Please let me know if your institution is not listed.  I will remove your current application so that you will be able to re-apply.  
 	
 * If no apparent connection to US institution (Canned Responses: "New Account Request - non US") 
-	> We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?
+	
+>We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?
 
 **Non-Responsive Applications**
 
@@ -137,33 +141,27 @@ the first of their group, choose `login05`.
 Send the following email to the new user (Canned Responses: "New Account Request - welcome email")
 
 > Hi NAME OF USER,
-
-	I've authorized your account in the Globus 'osg' group (for OSG Connect, which you should receive a confirmation email for), and I invited you
-	to join the new "GROUPNAME" group project. You should have second email inviting you to accept this invitation to your project.
-
-	**Log In**
-	The last step you need to log in is submitting a public ssh key -- see [this page](https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login) for detailed
-	instructions. You should be able to log into an OSG Connect login node
-	with your Globus ID (and password) within an hour after setting
-	up your ssh keys. You can find which login node to use by logging into the 
-	OSG Connect website (osgconnect.net) and looking on the left-hand side of your profile. 
-
-	**Submitting Jobs**
-	For job submission, I highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).
-	Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and you'll be best off by
-	submitting all jobs from /local-scratch (see [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg)).
-  
-
-	Before submitting any jobs, you’ll need to activate your project so that the required
-	‘ProjectName’ attribute is automatically set for future submissions. On the login node, run:
-	$ connect project
-
-	Let me know how things go as you submit -- you can email us at this address
-	(support@osgconnect.net) or reply to this thread. We're here to help!
-
-	Cheers,
-
-	STAFF MEMBER
+>
+> I've authorized your login account for OSG Connect and added you to the "GROUPNAME" project in OSG (which you can use to run jobs on OSG from any submit point). You should have separate emails confirming these actions.
+>
+>
+>**Log In**
+>
+> The last step you need to log in is submitting a public ssh key -- see [this page](https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login) for detailed instructions. You should be able to log into your designated OSG Connect login node within a few hours after setting up your ssh key.
+>
+>
+>**Submitting Jobs**
+>
+> For job submission, we highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).  Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and the [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg) guide discusses where and how to stage your data on the login node for for running jobs. 
+>
+> Before submitting any jobs on OSG Connect, you’ll want to activate your 'default' submission project so that the required ‘ProjectName’ option is automatically set for future submissions. On the login node, run:
+> $ connect project
+>
+> Let me know how things go as you submit -- you can email us at this address (user-support@opensciencegrid.org) or reply to this thread.  We're here to help!
+>
+> Cheers,
+>
+> STAFF MEMBER
 
 **Ticket clean up**
 
