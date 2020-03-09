@@ -772,33 +772,35 @@ into the ticket as a note. </p>
 <p><strong>Initial Response</strong></p>
 <ul>
 <li>Do they have US institutional email?</li>
-<li>
-<p>Standard response (also in the User Support's Canned Responses "New Account Request - schedule initial meeting")
-    &gt; Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.
-    &gt; 
-    &gt; See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.
-    &gt; 
-    &gt; Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
-    &gt; 
-    &gt; * Project Title:  (representative of your research group/org’s research priorities)
-    &gt; * PI Email: 
-    &gt; * PI Department or Organization:
-    &gt; * PI Institution:
-    &gt; * Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)
-    &gt; 
-    &gt; Looking forward to meeting you soon!
-    &gt; 
-    &gt; XXSIGNATUREXX</p>
-</li>
-<li>
-<p>If no institutional email (Canned Responses: "New Account Request - non-institutional email")
-    &gt; We received your application to join OSG Connect. A requirement for using OSG Connect is that you be affiliated with a United States academic, non-profit, or government organization. One way that we verify this affiliation is through an institutional/university email address. Can you please re-apply using your institutional email in the E-mail address field?  It may require logging out of the osgconnect.net web portal and logging in again with your institutional credentials.  On the login page, where it says “Use your existing organizational login,” please select your institution from the drop-down menu and then “continue.”  Please let me know if your institution is not listed.  I will remove your current application so that you will be able to re-apply.  </p>
-</li>
-<li>
-<p>If no apparent connection to US institution (Canned Responses: "New Account Request - non US") 
-    &gt; We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?</p>
-</li>
+<li>Standard response (also in the User Support's Canned Responses "New Account Request - schedule initial meeting")</li>
 </ul>
+<blockquote>
+<p>Thank you for your application for an OSG Connect account. In order to understand your computational research goals and ensure that you get the most out of the Open Science Grid, we schedule a brief meeting as part of the account approval process.</p>
+<p>See my calendar for my availability (XXXXXXXX - note my XX time zone), and let me know what time would work well for you to meet. Our discussion should take between 30 - 45 minutes, and I can provide a teleconference link, unless you have a more preferable option.</p>
+<p>Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.</p>
+<ul>
+<li>Project Title:  (representative of your research group/org’s research priorities)</li>
+<li>PI Email:   </li>
+<li>PI Department or Organization:</li>
+<li>PI Institution:</li>
+<li>Project Field of Science: (out of https://www.nsf.gov/about/research_areas.jsp)</li>
+</ul>
+<p>Looking forward to meeting you soon!</p>
+<p>XXSIGNATUREXX</p>
+</blockquote>
+<ul>
+<li>If no institutional email (Canned Responses: "New Account Request - non-institutional email")</li>
+</ul>
+<blockquote>
+<p>We received your application to join OSG Connect. A requirement for using OSG Connect is that you be affiliated with a United States academic, non-profit, or government organization. One way that we verify this affiliation is through an institutional/university email address. </p>
+<p>Can you please re-apply using your institutional email in the E-mail address field?  It may require logging out of the osgconnect.net web portal and logging in again with your institutional credentials.  On the login page, where it says “Use your existing organizational login,” please select your institution from the drop-down menu and then “continue.”  Please let me know if your institution is not listed.  I will remove your current application so that you will be able to re-apply.  </p>
+</blockquote>
+<ul>
+<li>If no apparent connection to US institution (Canned Responses: "New Account Request - non US") </li>
+</ul>
+<blockquote>
+<p>We received your application for an OSG Connect account. One of the requirements to have an account on OSG Connect is that the applicant needs to have an affiliation with a US-based institution or project.  Do you have an affiliation with a US research institution (academic, government, non-profit), or US-based collaboration (if so, which collaboration)?</p>
+</blockquote>
 <p><strong>Non-Responsive Applications</strong></p>
 <p>If someone doesn't respond to the request for a meeting, we will send one follow-up email (a week later) and then reject the account (a week later). </p>
 <ol>
@@ -859,36 +861,17 @@ the first of their group, choose <code>login05</code>. </li>
 <p>Send the following email to the new user (Canned Responses: "New Account Request - welcome email")</p>
 <blockquote>
 <p>Hi NAME OF USER,</p>
+<p>I've authorized your login account for OSG Connect and added you to the "GROUPNAME" project in OSG (which you can use to run jobs on OSG from any submit point). You should have separate emails confirming these actions.</p>
+<p><strong>Log In</strong></p>
+<p>The last step you need to log in is submitting a public ssh key -- see <a href="https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login">this page</a> for detailed instructions. You should be able to log into your designated OSG Connect login node within a few hours after setting up your ssh key.</p>
+<p><strong>Submitting Jobs</strong></p>
+<p>For job submission, we highly recommend looking through the latest <a href="https://agenda.hep.wisc.edu/event/1201/other-view">HTCondor User Tutorial</a>.  Our <a href="https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart">OSG Connect Quickstart</a> has a few HTCondor examples, and the <a href="https://support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg">Data Management</a> guide discusses where and how to stage your data on the login node for for running jobs. </p>
+<p>Before submitting any jobs on OSG Connect, you’ll want to activate your 'default' submission project so that the required ‘ProjectName’ option is automatically set for future submissions. On the login node, run:
+$ connect project</p>
+<p>Let me know how things go as you submit -- you can email us at this address (user-support@opensciencegrid.org) or reply to this thread.  We're here to help!</p>
+<p>Cheers,</p>
+<p>STAFF MEMBER</p>
 </blockquote>
-<div class="codehilite"><pre><span></span><span class="n">I</span><span class="err">&#39;</span><span class="n">ve</span> <span class="n">authorized</span> <span class="n">your</span> <span class="n">account</span> <span class="k">in</span> <span class="n">the</span> <span class="n">Globus</span> <span class="err">&#39;</span><span class="n">osg</span><span class="err">&#39;</span> <span class="n">group</span> <span class="p">(</span><span class="k">for</span> <span class="n">OSG</span> <span class="n">Connect</span><span class="p">,</span> <span class="n">which</span> <span class="n">you</span> <span class="n">should</span> <span class="n">receive</span> <span class="n">a</span> <span class="n">confirmation</span> <span class="n">email</span> <span class="k">for</span><span class="p">),</span> <span class="n">and</span> <span class="n">I</span> <span class="n">invited</span> <span class="n">you</span>
-<span class="n">to</span> <span class="n">join</span> <span class="n">the</span> <span class="n">new</span> <span class="s">&quot;GROUPNAME&quot;</span> <span class="n">group</span> <span class="n">project</span><span class="p">.</span> <span class="n">You</span> <span class="n">should</span> <span class="n">have</span> <span class="n">second</span> <span class="n">email</span> <span class="n">inviting</span> <span class="n">you</span> <span class="n">to</span> <span class="n">accept</span> <span class="n">this</span> <span class="n">invitation</span> <span class="n">to</span> <span class="n">your</span> <span class="n">project</span><span class="p">.</span>
-
-<span class="o">**</span><span class="n">Log</span> <span class="n">In</span><span class="o">**</span>
-<span class="n">The</span> <span class="n">last</span> <span class="n">step</span> <span class="n">you</span> <span class="n">need</span> <span class="n">to</span> <span class="n">log</span> <span class="k">in</span> <span class="n">is</span> <span class="n">submitting</span> <span class="n">a</span> <span class="n">public</span> <span class="n">ssh</span> <span class="n">key</span> <span class="o">--</span> <span class="n">see</span> <span class="p">[</span><span class="n">this</span> <span class="n">page</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login) for detailed</span>
-<span class="n">instructions</span><span class="p">.</span> <span class="n">You</span> <span class="n">should</span> <span class="n">be</span> <span class="n">able</span> <span class="n">to</span> <span class="n">log</span> <span class="n">into</span> <span class="n">an</span> <span class="n">OSG</span> <span class="n">Connect</span> <span class="n">login</span> <span class="n">node</span>
-<span class="n">with</span> <span class="n">your</span> <span class="n">Globus</span> <span class="n">ID</span> <span class="p">(</span><span class="n">and</span> <span class="n">password</span><span class="p">)</span> <span class="n">within</span> <span class="n">an</span> <span class="n">hour</span> <span class="n">after</span> <span class="n">setting</span>
-<span class="n">up</span> <span class="n">your</span> <span class="n">ssh</span> <span class="n">keys</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">find</span> <span class="n">which</span> <span class="n">login</span> <span class="n">node</span> <span class="n">to</span> <span class="n">use</span> <span class="n">by</span> <span class="n">logging</span> <span class="n">into</span> <span class="n">the</span> 
-<span class="n">OSG</span> <span class="n">Connect</span> <span class="n">website</span> <span class="p">(</span><span class="n">osgconnect</span><span class="p">.</span><span class="n">net</span><span class="p">)</span> <span class="n">and</span> <span class="n">looking</span> <span class="n">on</span> <span class="n">the</span> <span class="n">left</span><span class="o">-</span><span class="n">hand</span> <span class="n">side</span> <span class="n">of</span> <span class="n">your</span> <span class="n">profile</span><span class="p">.</span>
-
-<span class="o">**</span><span class="n">Submitting</span> <span class="n">Jobs</span><span class="o">**</span>
-<span class="n">For</span> <span class="n">job</span> <span class="n">submission</span><span class="p">,</span> <span class="n">I</span> <span class="n">highly</span> <span class="n">recommend</span> <span class="n">looking</span> <span class="n">through</span> <span class="n">the</span> <span class="n">latest</span> <span class="p">[</span><span class="n">HTCondor</span> <span class="n">User</span> <span class="n">Tutorial</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//agenda.hep.wisc.edu/event/1201/other-view).</span>
-<span class="n">Our</span> <span class="p">[</span><span class="n">OSG</span> <span class="n">Connect</span> <span class="n">Quickstart</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and you&#39;ll be best off by</span>
-<span class="n">submitting</span> <span class="n">all</span> <span class="n">jobs</span> <span class="n">from</span> <span class="o">/</span><span class="n">local</span><span class="o">-</span><span class="n">scratch</span> <span class="p">(</span><span class="n">see</span> <span class="p">[</span><span class="n">Data</span> <span class="n">Management</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg)).</span>
-
-
-<span class="n">Before</span> <span class="n">submitting</span> <span class="n">any</span> <span class="n">jobs</span><span class="p">,</span> <span class="n">you</span><span class="err">’</span><span class="n">ll</span> <span class="n">need</span> <span class="n">to</span> <span class="n">activate</span> <span class="n">your</span> <span class="n">project</span> <span class="n">so</span> <span class="n">that</span> <span class="n">the</span> <span class="n">required</span>
-<span class="err">‘</span><span class="n">ProjectName</span><span class="err">’</span> <span class="n">attribute</span> <span class="n">is</span> <span class="n">automatically</span> <span class="n">set</span> <span class="k">for</span> <span class="n">future</span> <span class="n">submissions</span><span class="p">.</span> <span class="n">On</span> <span class="n">the</span> <span class="n">login</span> <span class="n">node</span><span class="p">,</span> <span class="nl">run</span><span class="p">:</span>
-<span class="err">$</span> <span class="n">connect</span> <span class="n">project</span>
-
-<span class="n">Let</span> <span class="n">me</span> <span class="n">know</span> <span class="n">how</span> <span class="n">things</span> <span class="n">go</span> <span class="n">as</span> <span class="n">you</span> <span class="n">submit</span> <span class="o">--</span> <span class="n">you</span> <span class="n">can</span> <span class="n">email</span> <span class="n">us</span> <span class="n">at</span> <span class="n">this</span> <span class="n">address</span>
-<span class="p">(</span><span class="n">support</span><span class="p">@</span><span class="n">osgconnect</span><span class="p">.</span><span class="n">net</span><span class="p">)</span> <span class="n">or</span> <span class="n">reply</span> <span class="n">to</span> <span class="n">this</span> <span class="kr">thread</span><span class="p">.</span> <span class="n">We</span><span class="err">&#39;</span><span class="n">re</span> <span class="n">here</span> <span class="n">to</span> <span class="n">help</span><span class="o">!</span>
-
-<span class="n">Cheers</span><span class="p">,</span>
-
-<span class="n">STAFF</span> <span class="n">MEMBER</span>
-</pre></div>
-
-
 <p><strong>Ticket clean up</strong></p>
 <ul>
 <li>Paste notes from onboarding meeting into ticket</li>

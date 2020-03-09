@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/general/cvmfs/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/accounts-and-projects/general/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/accounts-and-projects/accounts/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/accounts-and-projects/projects/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/accounts-and-projects/gosync3/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/midscale-engagements/spt/general/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/midscale-engagements/spt/cvmfs/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/midscale-engagements/veritas/general/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/midscale-engagements/veritas/cvmfs/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/midscale-engagements/xenon/general/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/midscale-engagements/xenon/cvmfs/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/campus-research/documentation/freshdesk/</loc>
-     <lastmod>2020-03-02</lastmod>
+     <lastmod>2020-03-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
