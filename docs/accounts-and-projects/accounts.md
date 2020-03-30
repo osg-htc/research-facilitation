@@ -51,7 +51,6 @@ into the ticket as a note.
 >	
 > Additionally, we can streamline the upstart process by associating your account with an OSG Connect 'project'. If you intend to join an existing OSG Connect project associated with your research group, please let me know the name and PI of that project. Otherwise, we just need the below details to create a new project for you, which other members of your research group could join at a later time.
 >
-> * Project Title:  (representative of your research group/org’s research priorities)
 > * PI Email: 	
 > * PI Department or Organization:
 > * PI Institution:
