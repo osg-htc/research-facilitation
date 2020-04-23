@@ -13,8 +13,10 @@ affiliated with a US-based institution or research project.
 Contact Us
 ----------
 
-* [Open a Ticket](https://support.opensciencegrid.org/support/tickets/new)
-* Email: <mailto:support@osgconnect.net>
+* Open a Ticket
+	* [On the web](https://support.opensciencegrid.org/support/tickets/new)
+	* Via Email: <mailto:support@osgconnect.net>
+* Contact the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov
 
 More Information
 ----------------
