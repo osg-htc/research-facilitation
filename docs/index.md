@@ -7,7 +7,7 @@ Mission
 -------
 
 The mission of OSG Connect Research Facilitation Team is to advance the work of researchers and 
-campuses via participation in OSG, through consultations on services and upstart, training and 
+campuses via participation in OSG, through consultations on service selection and upstart, training and 
 documentation, and channels for ongoing support.
 
 For researchers, the RF Team supports all use of the [OSG Connect](https://www.osgconnect.net/) service, 
