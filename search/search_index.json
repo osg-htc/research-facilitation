@@ -2,8 +2,28 @@
     "docs": [
         {
             "location": "/",
-            "text": "",
+            "text": "OSG Operations\n\u00b6\n\n\nWelcome to the home page of the OSG Connect Research Facilitation Team documentation\n\n\nMission\n\u00b6\n\n\nThe mission of OSG Connect Research Facilitation Team is to advance scientific research by \nproviding access to, support of and training regarding the use of the Open Science Grid to researchers \naffiliated with a US-based institution or research project.\n\n\nContact Us\n\u00b6\n\n\n\n\nOpen a Ticket\n\n\nOn the web\n\n\nVia Email: \nsupport@osgconnect.net\n\n\n\n\n\n\nContact the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov\n\n\n\n\nMore Information\n\u00b6\n\n\nLearn more about the Open Science Grid and see if your research is a good fit by \n\nvisiting our documentation\n\nor \nregister with OSG Connect by completing an account request\n.",
             "title": "Home"
+        },
+        {
+            "location": "/#osg-operations",
+            "text": "Welcome to the home page of the OSG Connect Research Facilitation Team documentation",
+            "title": "OSG Operations"
+        },
+        {
+            "location": "/#mission",
+            "text": "The mission of OSG Connect Research Facilitation Team is to advance scientific research by \nproviding access to, support of and training regarding the use of the Open Science Grid to researchers \naffiliated with a US-based institution or research project.",
+            "title": "Mission"
+        },
+        {
+            "location": "/#contact-us",
+            "text": "Open a Ticket  On the web  Via Email:  support@osgconnect.net    Contact the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov",
+            "title": "Contact Us"
+        },
+        {
+            "location": "/#more-information",
+            "text": "Learn more about the Open Science Grid and see if your research is a good fit by  visiting our documentation \nor  register with OSG Connect by completing an account request .",
+            "title": "More Information"
         },
         {
             "location": "/general/cvmfs/",
