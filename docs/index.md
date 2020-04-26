@@ -1,5 +1,5 @@
-OSG Operations
-==============
+OSG Connect Research Facilitation
+=================================
 
 Welcome to the home page of the OSG Connect Research Facilitation Team documentation
 
