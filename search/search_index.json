@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "OSG Operations\n\u00b6\n\n\nWelcome to the home page of the OSG Connect Research Facilitation Team documentation\n\n\nMission\n\u00b6\n\n\nThe mission of OSG Connect Research Facilitation Team is to advance scientific research by \nproviding access to, support of and training regarding the use of the Open Science Grid to researchers \naffiliated with a US-based institution or research project.\n\n\nContact Us\n\u00b6\n\n\n\n\nOpen a Ticket\n\n\nOn the web\n\n\nVia Email: \nsupport@osgconnect.net\n\n\n\n\n\n\nContact the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov\n\n\n\n\nMore Information\n\u00b6\n\n\nLearn more about the Open Science Grid and see if your research is a good fit by \n\nvisiting our documentation\n\nor \nregister with OSG Connect by completing an account request\n.",
+            "text": "OSG Operations\n\u00b6\n\n\nWelcome to the home page of the OSG Connect Research Facilitation Team documentation\n\n\nMission\n\u00b6\n\n\nThe mission of OSG Connect Research Facilitation Team is to advance the work of researchers and \ncampuses via participation in OSG, through consultations on service selection and upstart, training and \ndocumentation, and channels for ongoing support.\n\n\nFor researchers, the RF Team supports all use of the \nOSG Connect\n service, \navaiable to individual researchers and research groups working on behalf of affiliation with a US \nacademic/govt/non-profit organization.\n\n\nContact Us\n\u00b6\n\n\n\n\nSign Up for a new \nOSG Connect\n account (we'll follow up to meet with you).\n\n\nOpen a email thread for OSG Connect support.\n\n\nVia Email: \nsupport@osgconnect.net\n\n\nVia Web\n\n\n\n\n\n\nOpen an email thread for general support (best for campuses).\n\n\nVia Email: \nsupport@opensciencegrid.net\n\n\nVia Web\n\n\n\n\n\n\nInternal OSG list for the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov\n\n\n\n\nMore Information\n\u00b6\n\n\nLearn more about the Open Science Grid and capabilities for campuses and researchers\n\nhere\n.\n\n\nLearn more about OSG-amenable compute tasks and how to execute them in the \n\nOSG Connect\n documentation.",
             "title": "Home"
         },
         {
@@ -12,17 +12,17 @@
         },
         {
             "location": "/#mission",
-            "text": "The mission of OSG Connect Research Facilitation Team is to advance scientific research by \nproviding access to, support of and training regarding the use of the Open Science Grid to researchers \naffiliated with a US-based institution or research project.",
+            "text": "The mission of OSG Connect Research Facilitation Team is to advance the work of researchers and \ncampuses via participation in OSG, through consultations on service selection and upstart, training and \ndocumentation, and channels for ongoing support.  For researchers, the RF Team supports all use of the  OSG Connect  service, \navaiable to individual researchers and research groups working on behalf of affiliation with a US \nacademic/govt/non-profit organization.",
             "title": "Mission"
         },
         {
             "location": "/#contact-us",
-            "text": "Open a Ticket  On the web  Via Email:  support@osgconnect.net    Contact the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov",
+            "text": "Sign Up for a new  OSG Connect  account (we'll follow up to meet with you).  Open a email thread for OSG Connect support.  Via Email:  support@osgconnect.net  Via Web    Open an email thread for general support (best for campuses).  Via Email:  support@opensciencegrid.net  Via Web    Internal OSG list for the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov",
             "title": "Contact Us"
         },
         {
             "location": "/#more-information",
-            "text": "Learn more about the Open Science Grid and see if your research is a good fit by  visiting our documentation \nor  register with OSG Connect by completing an account request .",
+            "text": "Learn more about the Open Science Grid and capabilities for campuses and researchers here .  Learn more about OSG-amenable compute tasks and how to execute them in the  OSG Connect  documentation.",
             "title": "More Information"
         },
         {
