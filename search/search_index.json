@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/",
-            "text": "OSG Operations\n\u00b6\n\n\nWelcome to the home page of the OSG Connect Research Facilitation Team documentation\n\n\nMission\n\u00b6\n\n\nThe mission of OSG Connect Research Facilitation Team is to advance the work of researchers and \ncampuses via participation in OSG, through consultations on service selection and upstart, training and \ndocumentation, and channels for ongoing support.\n\n\nFor researchers, the RF Team supports all use of the \nOSG Connect\n service, \navaiable to individual researchers and research groups working on behalf of affiliation with a US \nacademic/govt/non-profit organization.\n\n\nContact Us\n\u00b6\n\n\n\n\nSign Up for a new \nOSG Connect\n account (we'll follow up to meet with you).\n\n\nOpen a email thread for OSG Connect support.\n\n\nVia Email: \nsupport@osgconnect.net\n\n\nVia Web\n\n\n\n\n\n\nOpen an email thread for general support (best for campuses).\n\n\nVia Email: \nsupport@opensciencegrid.net\n\n\nVia Web\n\n\n\n\n\n\nInternal OSG list for the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov\n\n\n\n\nMore Information\n\u00b6\n\n\nLearn more about the Open Science Grid and capabilities for campuses and researchers\n\nhere\n.\n\n\nLearn more about OSG-amenable compute tasks and how to execute them in the \n\nOSG Connect\n documentation.",
+            "text": "OSG Connect Research Facilitation\n\u00b6\n\n\nWelcome to the home page of the OSG Connect Research Facilitation Team documentation\n\n\nMission\n\u00b6\n\n\nThe mission of OSG Connect Research Facilitation Team is to advance the work of researchers and \ncampuses via participation in OSG, through consultations on service selection and upstart, training and \ndocumentation, and channels for ongoing support.\n\n\nFor researchers, the RF Team supports all use of the \nOSG Connect\n service, \navaiable to individual researchers and research groups working on behalf of affiliation with a US \nacademic/govt/non-profit organization.\n\n\nContact Us\n\u00b6\n\n\n\n\nSign Up for a new \nOSG Connect\n account (we'll follow up to meet with you).\n\n\nOpen a email thread for OSG Connect support.\n\n\nVia Email: \nsupport@osgconnect.net\n\n\nVia Web\n\n\n\n\n\n\nOpen an email thread for general support (best for campuses).\n\n\nVia Email: \nsupport@opensciencegrid.net\n\n\nVia Web\n\n\n\n\n\n\nInternal OSG list for the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov\n\n\n\n\nMore Information\n\u00b6\n\n\nLearn more about the Open Science Grid and capabilities for campuses and researchers\n\nhere\n.\n\n\nLearn more about OSG-amenable compute tasks and how to execute them in the \n\nOSG Connect\n documentation.",
             "title": "Home"
         },
         {
-            "location": "/#osg-operations",
+            "location": "/#osg-connect-research-facilitation",
             "text": "Welcome to the home page of the OSG Connect Research Facilitation Team documentation",
-            "title": "OSG Operations"
+            "title": "OSG Connect Research Facilitation"
         },
         {
             "location": "/#mission",
