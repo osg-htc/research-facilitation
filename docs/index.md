@@ -22,7 +22,7 @@ Contact Us
 	* Via Email: <mailto:support@osgconnect.net>
 	* [Via Web](https://support.opensciencegrid.org/support/tickets/new)
 * Open an email thread for general support (best for campuses).
-	* Via Email: <mailto:support@opensciencegrid.net>
+	* Via Email: <mailto:support@opensciencegrid.org>
 	* [Via Web](https://support.opensciencegrid.org/support/tickets/new)
 * Internal OSG list for the Research Facilitation team: <mailto:research-facilitation@listserv.fnal.gov>
 
