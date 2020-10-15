@@ -151,13 +151,13 @@ Send the following email to the new user (Canned Responses: "New Account Request
 >
 >**Submitting Jobs**
 >
-> For job submission, we highly recommend looking through the latest [HTCondor User Tutorial](https://agenda.hep.wisc.edu/event/1201/other-view).  Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and the [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg) guide discusses where and how to stage your data on the login node for for running jobs. 
+> For job submission, we highly recommend looking through the latest [HTCondor Job Submission Tutorial] presentation(https://agenda.hep.wisc.edu/event/1325/session/0/contribution/19/material/slides/0.pdf).  Our [OSG Connect Quickstart](https://support.opensciencegrid.org/support/solutions/articles/5000633410-osg-connect-quickstart) has a few HTCondor examples, and the [Data Management](https://support.opensciencegrid.org/support/solutions/articles/12000002985-introduction-to-data-management-on-osg) guide discusses where and how to stage your data on the login node for for running jobs. 
 >
 > Before submitting any jobs on OSG Connect, you’ll want to activate your 'default' submission project so that the required ‘ProjectName’ option is automatically set for future submissions. On the login node, run:
 >
 > $ connect project
 >
-> Let me know how things go as you submit -- you can email us at this address (user-support@opensciencegrid.org) or reply to this thread.  We're here to help!
+> Let me know how things go as you submit -- you can email us at this address (support@osgconnect.net) or reply to this thread.  We're here to help!
 >
 > Cheers,
 >
