@@ -37,4 +37,3 @@ markdown_extensions:
   - codehilite
   - toc:
      permalink: True
-  - osg_markdown.colors
