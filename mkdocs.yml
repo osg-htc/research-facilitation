@@ -1,6 +1,6 @@
 site_name: OSG Research Faciliation
 site_url: https://opensciencegrid.org/research-facilitation/
-repo_url: https://github.com/opensciencegrid/research-faciliation/
+repo_url: https://github.com/opensciencegrid/research-facilitation/
 google_analytics: ['UA-69012-29', 'opensciencegrid.github.io']
 theme:
   name: material
