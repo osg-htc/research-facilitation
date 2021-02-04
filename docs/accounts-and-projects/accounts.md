@@ -116,7 +116,7 @@ for the user.
 **Create a project:**
 
 If the user is joining a new project, it will need to be created at this point. 
-This can be completed by following the steps outlined on the [Projects documentation page](/docs/accounts-and-projects/projects.md).
+This can be completed by following the steps outlined on the [Projects documentation page](projects.md).
 
 **Add to their appropriate project:**
 
