@@ -60,7 +60,7 @@ That will give you the ID number for the new project.
 within your own (forked) version of the repository. If you have not already
 done so, fork the topology repository by visiting https://github.com/opensciencegrid/topology, 
 clicking "Fork". Detailed information for setting up and maintaining your fork can be found
-in the [GitHub documentation page]({% link docs/documentation/github.md %}).
+in the [GitHub documentation page](../documentation/github.md).
 
 Within your forked repository, go into the projects folder and create a project file. 
 The project file should be named the same as the short (UNIX) project name. 
