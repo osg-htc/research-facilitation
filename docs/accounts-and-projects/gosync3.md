@@ -89,7 +89,7 @@ to get the app ID added to the system
 * Has a secret associated with the application
 
 For more details, please see the 
-[Globus SDK documentation](http://globus-sdk-python.readthedocs.io/en/latest/tutorial/#step-1-get-a-client). 
+[Globus SDK documentation](https://globus-sdk-python.readthedocs.io/en/latest/tutorial.html). 
 
 ## Configuration
 
