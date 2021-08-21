@@ -44,28 +44,28 @@ The project will also need to be added to the OSG topology at
 
 https://github.com/opensciencegrid/topology/tree/master/projects
 
-1. Clone the topology repository and `cd` into it.
-```
-git clone https://github.com/opensciencegrid/topology
-cd topology
-```
+1.  Clone the topology repository and `cd` into it.
 
+        git clone https://github.com/opensciencegrid/topology
+        cd topology
 
-2. To add a new project file, you will need to ensure you are working
-within your own (forked) version of the repository. If you have not already
-done so, fork the topology repository by visiting https://github.com/opensciencegrid/topology, 
-clicking "Fork". Detailed information for setting up and maintaining your fork can be found
-in the [GitHub documentation page](../documentation/github.md).
+2.  To add a new project file, you will need to ensure you are working
+    within your own (forked) version of the repository. If you have not already
+    done so, fork the topology repository by visiting https://github.com/opensciencegrid/topology, 
+    clicking "Fork". Detailed information for setting up and maintaining your fork can be found
+    in the [GitHub documentation page](../documentation/github.md).
 
-Within your forked repository, go into the projects folder and create a project file. 
-The project file should be named the same as the short (UNIX) project name. 
-It usually makes sense to copy from another project 
-file that was also created for an OSG Connect project so the 
-sponsor information is already correct.  Fill in the appropriate information.
+    Within your forked repository, go into the projects folder and create a project file. 
+    The project file should be named the same as the short (UNIX) project name. 
+    It usually makes sense to copy from another project 
+    file that was also created for an OSG Connect project so the 
+    sponsor information is already correct.  Fill in the appropriate information.
 
-Note: some projects may have `ID` or `Name` fields; these are no longer necessary.
+    Note: some projects may have `ID` or `Name` fields; these are no longer necessary.
 
-In order to maintain consistency in organization naming structure, please use the `bin/list_organizations` 
-function to ensure the name you are using matches this list.
+    In order to maintain consistency in organization naming structure, please use the `bin/list_organizations` 
+    function to ensure the name you are using matches this list.
 
-3. Commit the new project file and submit a PR. 
+    
+
+3.  Commit the new project file and submit a PR. 
