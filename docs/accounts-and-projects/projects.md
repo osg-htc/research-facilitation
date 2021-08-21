@@ -29,7 +29,7 @@ Click "Submit" to add the new project.
 ## Add the user to the project
 
 After the project file has been created, add the required users to the project. 
-If you are doing this step immediately after creating the project, skip to step <<number>> below
+If you are doing this step immediately after creating the project, skip to step 4 below
 
 1. Go to https://www.osgconnect.net and login
 2. Click on the "Projects" tab on the Admin panel
@@ -50,13 +50,8 @@ git clone https://github.com/opensciencegrid/topology
 cd topology
 ```
 
-2. Run the "next project id" script in the bin/ directory:
-```
-bin/next_project_id
-```
-That will give you the ID number for the new project.  
 
-3. To add a new project file, you will need to ensure you are working
+2. To add a new project file, you will need to ensure you are working
 within your own (forked) version of the repository. If you have not already
 done so, fork the topology repository by visiting https://github.com/opensciencegrid/topology, 
 clicking "Fork". Detailed information for setting up and maintaining your fork can be found
@@ -66,10 +61,11 @@ Within your forked repository, go into the projects folder and create a project 
 The project file should be named the same as the short (UNIX) project name. 
 It usually makes sense to copy from another project 
 file that was also created for an OSG Connect project so the 
-sponsor information is already correct.  Fill in the appropriate information, including the ID number 
-you got from the previous step.
+sponsor information is already correct.  Fill in the appropriate information.
 
-In order to maintain consistancy in organization naming structure, please use the `bin/list_organizations` 
+Note: some projects may have `ID` or `Name` fields; these are no longer necessary.
+
+In order to maintain consistency in organization naming structure, please use the `bin/list_organizations` 
 function to ensure the name you are using matches this list.
 
-4. Commit the new project file and submit a PR. 
+3. Commit the new project file and submit a PR. 
