@@ -26,9 +26,10 @@ for the "Field of Science".
 
 Note: the convention for "Project Name" for non-XSEDE projects is `<SHORT INSTITUTION>_<PI LAST NAME>`
 where `<SHORT INSTITUTION>` is an abbreviation or short version of the organization name.
-For example, for "University of Wisconsin-Madison" we use "UWMadison".
-For consistency, there is a list of previously used short versions in the
+For example, abbreviate "University of Wisconsin-Madison" as "UWMadison".
+There is a list of previously used short versions in the
 [project/institution mappings file](https://github.com/opensciencegrid/topology/blob/master/mappings/project_institution.yaml).
+For consistency, if you find the organization in that file, use its corresponding abbreviation.
 If the organization is not in that file, you should add it later when you register the project in topology.
 
 Click "Submit" to add the new project.
