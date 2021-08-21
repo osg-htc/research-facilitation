@@ -24,6 +24,13 @@ Project Description:
 Please only use [NSF-aligned Field of Sciences](https://osp.unm.edu/pi-resources/nsf-research-classifications.html) 
 for the "Field of Science". 
 
+Note: the convention for "Project Name" for non-XSEDE projects is `<SHORT INSTITUTION>_<PI LAST NAME>`
+where `<SHORT INSTITUTION>` is an abbreviation or short version of the organization name.
+For example, for "University of Wisconsin-Madison" we use "UWMadison".
+For consistency, there is a list of previously used short versions in the
+[project/institution mappings file](https://github.com/opensciencegrid/topology/blob/master/mappings/project_institution.yaml).
+If the organization is not in that file, you should add it later when you register the project in topology.
+
 Click "Submit" to add the new project.
 
 ## Add the user to the project
@@ -66,6 +73,9 @@ https://github.com/opensciencegrid/topology/tree/master/projects
     In order to maintain consistency in organization naming structure, please use the `bin/list_organizations` 
     function to ensure the name you are using matches this list.
 
-    
+    If you made a project for an organization that was not listed in the
+    [project/institution mappings file](https://github.com/opensciencegrid/topology/blob/master/mappings/project_institution.yaml),
+    edit that file to add the prefix and the organization you used.
+    (You can skip this for XSEDE projects.)
 
 3.  Commit the new project file and submit a PR. 
