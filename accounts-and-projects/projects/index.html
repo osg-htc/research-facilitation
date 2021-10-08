@@ -352,8 +352,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-the-project-to-topology" class="md-nav__link">
-    Add the project to topology
+  <a href="#add-the-project-to-osg-topology" class="md-nav__link">
+    Add the project to OSG Topology
   </a>
   
 </li>
@@ -648,8 +648,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-the-project-to-topology" class="md-nav__link">
-    Add the project to topology
+  <a href="#add-the-project-to-osg-topology" class="md-nav__link">
+    Add the project to OSG Topology
   </a>
   
 </li>
@@ -689,11 +689,22 @@ Project Description:
 </code></pre></div>
 
 <p>Please only use <a href="https://osp.unm.edu/pi-resources/nsf-research-classifications.html">NSF-aligned Field of Sciences</a> 
-for the "Field of Science". </p>
+for the "Field of Science".</p>
+<p>For "PI Organization", visit the <a href="https://topology.opensciencegrid.org/organizations">project organizations list</a>
+to see if the organization is already used in another project.  If so, be sure to use the same spelling
+and punctuation in your own entry, so we don't have duplicate organizations with different spellings.</p>
+<p>Note: the convention for "Project Name" for non-XSEDE projects is <code>&lt;SHORT INSTITUTION&gt;_&lt;PI LAST NAME&gt;</code>
+where <code>&lt;SHORT INSTITUTION&gt;</code> is an abbreviation or short version of the organization name.
+For example, abbreviate "University of Wisconsin-Madison" as "UWMadison".
+The "Project Prefix" column in the <a href="https://topology.opensciencegrid.org/organizations">project organizations list</a>
+contains what you should use for <code>&lt;SHORT INSTITUTION&gt;</code> for that organization.  If the organization is not
+there, or the Project Prefix column is blank, pick something appropriate; you should later add it to the
+<a href="https://github.com/opensciencegrid/topology/blob/master/mappings/project_institution.yaml">project/institution mappings file</a>.
+when you register the project in Topology.</p>
 <p>Click "Submit" to add the new project.</p>
 <h2 id="add-the-user-to-the-project">Add the user to the project<a class="headerlink" href="#add-the-user-to-the-project" title="Permanent link">&para;</a></h2>
 <p>After the project file has been created, add the required users to the project. 
-If you are doing this step immediately after creating the project, skip to step &lt;<number>&gt; below</p>
+If you are doing this step immediately after creating the project, skip to step 4 below</p>
 <ol>
 <li>Go to https://www.osgconnect.net and login</li>
 <li>Click on the "Projects" tab on the Admin panel</li>
@@ -701,40 +712,37 @@ If you are doing this step immediately after creating the project, skip to step 
 <li>Click on the "Add Members" and find the target user, using "Search" if desired/necessary</li>
 <li>Add the user to the project by clicking the "Add Member" button next to their entry</li>
 </ol>
-<h2 id="add-the-project-to-topology">Add the project to <code>topology</code><a class="headerlink" href="#add-the-project-to-topology" title="Permanent link">&para;</a></h2>
-<p>The project will also need to be added to the OSG topology at </p>
-<p>https://github.com/opensciencegrid/topology/tree/master/projects</p>
+<h2 id="add-the-project-to-osg-topology">Add the project to OSG Topology<a class="headerlink" href="#add-the-project-to-osg-topology" title="Permanent link">&para;</a></h2>
+<p>The project will also need to be added to the OSG Topology repo at </p>
+<p><a href="https://github.com/opensciencegrid/topology/tree/master/projects">https://github.com/opensciencegrid/topology/tree/master/projects</a></p>
 <ol>
-<li>Clone the topology repository and <code>cd</code> into it.</li>
-</ol>
+<li>
+<p>Clone the topology repository and <code>cd</code> into it.</p>
 <div class="codehilite"><pre><span></span><code>git clone https://github.com/opensciencegrid/topology
 cd topology
 </code></pre></div>
 
-<ol>
-<li>Run the "next project id" script in the bin/ directory:</li>
-</ol>
-<div class="codehilite"><pre><span></span><code>bin/next_project_id
-</code></pre></div>
-
-<p>That will give you the ID number for the new project.  </p>
-<ol>
-<li>To add a new project file, you will need to ensure you are working
-within your own (forked) version of the repository. If you have not already
-done so, fork the topology repository by visiting https://github.com/opensciencegrid/topology, 
-clicking "Fork". Detailed information for setting up and maintaining your fork can be found
-in the <a href="../../documentation/github/">GitHub documentation page</a>.</li>
-</ol>
-<p>Within your forked repository, go into the projects folder and create a project file. 
-The project file should be named the same as the short (UNIX) project name. 
-It usually makes sense to copy from another project 
-file that was also created for an OSG Connect project so the 
-sponsor information is already correct.  Fill in the appropriate information, including the ID number 
-you got from the previous step.</p>
-<p>In order to maintain consistancy in organization naming structure, please use the <code>bin/list_organizations</code> 
-function to ensure the name you are using matches this list.</p>
-<ol>
-<li>Commit the new project file and submit a PR. </li>
+</li>
+<li>
+<p>To add a new project file, you will need to ensure you are working
+    within your own (forked) version of the repository. If you have not already
+    done so, fork the topology repository by visiting <a href="https://github.com/opensciencegrid/topology">https://github.com/opensciencegrid/topology</a>,
+    clicking "Fork". Detailed information for setting up and maintaining your fork can be found
+    in the <a href="../../documentation/github/">GitHub documentation page</a>.</p>
+<p>Within your forked repository, copy <code>template-project.yaml</code> into a new project file in the
+<code>projects</code> folder.
+The project file should be named the same as the short (UNIX) project name.
+Fill in the appropriate information -- use the same values that you used on the OSGConnect.net
+portal.</p>
+<p>If you made the project for a new organization, or an organization that didn't have a
+"Project Prefix" in the <a href="https://topology.opensciencegrid.org/organizations">project organizations list page</a>,
+edit the <a href="https://github.com/opensciencegrid/topology/blob/master/mappings/project_institution.yaml">project/institution mappings file</a>,
+and add the mapping for the prefix you used.</p>
+<p>(You can skip this for XSEDE projects.)</p>
+</li>
+<li>
+<p>Commit the new project file and, if modified, the project/institution mappings file, and submit a PR. </p>
+</li>
 </ol>
                 
               
