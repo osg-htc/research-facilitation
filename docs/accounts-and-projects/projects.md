@@ -71,7 +71,8 @@ The project will also need to be added to the OSG Topology repo at
     Within your forked repository, copy `template-project.yaml` into a new project file in the
     `projects` folder.
     The project file should be named the same as the short (UNIX) project name.
-    Fill in the appropriate information.
+    Fill in the appropriate information -- use the same values that you used on the OSGConnect.net
+    portal.
 
     If you made the project for a new organization, or an organization that didn't have a
     "Project Prefix" in the [project organizations list page](https://topology.opensciencegrid.org/organizations),
