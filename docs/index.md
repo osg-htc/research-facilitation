@@ -30,7 +30,7 @@ More Information
 ----------------
 
 Learn more about the Open Science Grid and capabilities for campuses and researchers
-[here](https://opensciencegrid.org/about/introduction/).
+[here](https://osg-htc.org/about/introduction/).
 
 Learn more about OSG-amenable compute tasks and how to execute them in the 
 [OSG Connect](https://support.opensciencegrid.org/support/solutions) documentation.

@@ -1,7 +1,12 @@
 site_name: OSG Research Faciliation
-site_url: https://opensciencegrid.org/research-facilitation/
-repo_url: https://github.com/opensciencegrid/research-facilitation/
-google_analytics: ['UA-69012-29', 'opensciencegrid.github.io']
+site_url: https://osg-htc.org/research-facilitation/
+repo_url: https://github.com/osg-htc/research-facilitation/
+
+extra:
+  analytics:
+    provider: google
+    property: 'G-JSFVB3Z38F'
+
 theme:
   name: material
   custom_dir: osgthedocs
