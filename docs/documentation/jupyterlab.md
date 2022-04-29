@@ -96,9 +96,9 @@ Each user has a *total* of 8 CPUs and 16 GB memory available to their JupyterLab
 To send JupyterLab jobs to HTCondor, the following information must be added to the HTCondor submit file with one modification: 
 
 ```
-# The `requirements =` and `+WantInteractiveJupyterEP` lines tell HTCondor to assign all jobs to run on the dedicated execute point server assigned to your instance upon launch. It is not necessary to edit these lines. 
+# The `requirements =` and `+FromJupyterLab` lines tell HTCondor to assign all jobs to run on the dedicated execute point server assigned to your instance upon launch. It is not necessary to edit these lines. 
 requirements = Machine == "CHTC-Jupyter-User-EP-$ENV(HOSTNAME)"
-+WantInteractiveJupyterEP = true
++FromJupyterLab = true
 
 # Sets a Project Name for this job submission 
 +ProjectName = "ProjectNameinCOManage"
