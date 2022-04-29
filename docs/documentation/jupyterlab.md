@@ -16,7 +16,7 @@ JupyterLab is a web-based interface for [Project Jupyter](https://jupyter.org). 
 
 More information about the JupyterLab interface can be found in the [JupyterLab manual](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html). 
 
-JupyterLab can be a helpful resource for teaching and for running small batches of HTCondor jobs for testing and/or troubleshooting.  
+JupyterLab can be a helpful resource for teaching and for running small batches of HTCondor jobs for testing and/or troubleshooting purposes.  
 
 
 # Steps to Accessing and Working in JupyterLab
@@ -29,7 +29,7 @@ The steps necessary for working in JupyterLab are:
 # Request Access to a JupyterLab Access Point
 
 ## Request an Account 
-To request access to a JupyterLab access point, submit an application using the following steps:
+To request access to JupyterLab, submit an application using the following steps:
 
 (1) Go to the [registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:261).You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. 
 
