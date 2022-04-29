@@ -31,20 +31,20 @@ The steps necessary for working in JupyterLab are:
 ## Request an Account 
 To request access to JupyterLab, submit an application using the following steps:
 
-(1) Go to the [registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:261).You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. 
+(1) Go to the [registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:261). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. 
 
 If you have issues signing in using your institutional credentials, contact us at support@opensciencegrid.org.
 
-(2) Once you sign in, you will be redirected to the "JupyterLab User Enrollment for New Users" page. Click "Begin" and enter your name, and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT". 
+(2) Once you sign in, you will be redirected to the "JupyterLab User Enrollment for New Users" page. Click "Begin" and enter your name and email address on the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT". 
 
 (3) After submitting your application, you will receive an email from registry@cilogon.org to verify your email address. Click the link listed in the email to be redirected to a page confirm your invitation details. Click the "ACCEPT" button to complete this step. 
 
 
 ## Meet with a Research Computing Facilitator
-Once OSG staff receive your email verification, a Research Computing Facilitator will contact you within one business day to arrange a short consultation and introduction to the JupyterLab resources. During this meeting, our staff will provide personalized start-up guidance per your specific computational research goals and activate your account.
+Once OSG staff receive your email verification, a Research Computing Facilitator will contact you within one business day to arrange a short consultation and introduction to JupyterLab resources. During this meeting, our staff will provide personalized start-up guidance per your specific computational research goals and activate your account.
 You will be notified when your account is approved via email.
 
-Additionally, you will be assigned a "ProjectName" that you can use later in an HTCondor Submit file to submit jobs through your JupyterLab interface to HTCondor. 
+Additionally, you will be assigned a "ProjectName" that you can use later in an HTCondor submit file to submit jobs through your JupyterLab interface to HTCondor. 
 
 
 ## Upload an SSH Key
@@ -52,7 +52,7 @@ Adding an SSH public key is optional. Contact us to discuss alternative ways to 
 
 After your account has been approved following a meeting with a Research Computing Facilitator, the last step of account creation is to add an SSH key. To do this:
 
-(1) Return to the Registration Page and login using CILogon if prompted.
+(1) Return to the [registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:261) and login using CILogon if prompted.
 
 (2) Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button. 
 
@@ -81,19 +81,19 @@ Once logged in, you will be automatically redirected to the "Server Options" pag
 | All Spark      | Includes Python, R, and Scala support for Apache Spark.      |
 
 
-Additional pre-configured server options will be released in the future. To request a specific server configuration, [contact a Research Computing Facilitator](support@osgconnect.net). 
+To request a specific server configuration, [contact a Research Computing Facilitator](support@osgconnect.net). 
 
 Select your desired server option and click "Start" to launch your instance. This process may take several minutes to complete. You will be redirected automatically to JupyterLab when your instance is ready.
 
 
-# Working within your JupyterLab Instance
+# Working with your JupyterLab Instance
 Working in JupyterLab, you will be able to interact with files in your `/home` directory, execute code, and save files. 
 
+Each user has a *total* of 8 CPUs and 16 GB memory available to their JupyterLab instance and HTCondor jobs submitted from the notebook. 
 
-# Resources and Sending jobs to HTCondor from within the JupyterLab Interface
-Each user has a *total* of 8 CPUs and 16 GB memory available to their JupyterLab Instance and HTCondor jobs submitted from the notebook. 
 
-To send JupyterLab jobs to HTCondor, the following information must be added to the HTCondor submit file with one modification: 
+# Sending jobs to HTCondor from JupyterLab
+To send jobs from JupyterLab to HTCondor, the following information must be added to the HTCondor submit file with one modification: 
 
 ```
 # The `requirements =` and `+FromJupyterLab` lines tell HTCondor to assign all jobs to run on the dedicated execute point server assigned to your instance upon launch. It is not necessary to edit these lines. 
@@ -122,7 +122,7 @@ error = hello-world.err
 
 request_cpus = 1
 request_memory = 1 GB
-request_disk = 1 GB
+request_disk = 2 GB
 
 requirements = Machine == "CHTC-Jupyter-User-EP-$ENV(HOSTNAME)"
 +ProjectName = "ProjectNameinCOManage"
