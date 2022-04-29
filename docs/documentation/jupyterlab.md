@@ -37,7 +37,7 @@ If you have issues signing in using your institutional credentials, contact us a
 
 (2) Once you sign in, you will be redirected to the "JupyterLab User Enrollment for New Users" page. Click "Begin" and enter your name, and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT". 
 
-(3) After submitting your application, you will receive an email from registry@cilogon.org to verify your email address. Click the link listed in the email to be redirected to a COManagepage confirm your invitation details. Click the "ACCEPT" button to complete this step. 
+(3) After submitting your application, you will receive an email from registry@cilogon.org to verify your email address. Click the link listed in the email to be redirected to a page confirm your invitation details. Click the "ACCEPT" button to complete this step. 
 
 
 ## Meet with a Research Computing Facilitator
@@ -76,14 +76,14 @@ Once logged in, you will be automatically redirected to the "Server Options" pag
 | R    | Includes the R interpreter and base environment.   |
 | SciPy      | Includes popular packages from the scientific Python ecosystem.       |
 | TensorFlow    | Includes popular Python deep learning libraries.  |
-| Data Sciencde      | Includes libraries for data analysis from the Julia, Python, and R communities.       |
+| Data Science      | Includes libraries for data analysis from the Julia, Python, and R communities.       |
 | PySpark    | Includes Python support for Apache Spark.  |
 | All Spark      | Includes Python, R, and Scala support for Apache Spark.      |
 
 
 Additional pre-configured server options will be released in the future. To request a specific server configuration, [contact a Research Computing Facilitator](support@osgconnect.net). 
 
-Select your desirerdd server option and click "Start" to launch your instance. This process may take several minutes to complete. You will be redirected automatically to JupyterLab when your instance is ready.
+Select your desired server option and click "Start" to launch your instance. This process may take several minutes to complete. You will be redirected automatically to JupyterLab when your instance is ready.
 
 
 # Working within your JupyterLab Instance
@@ -135,7 +135,7 @@ queue
 To log out of your session, go to the top left corner of the JupterLab interface and click the "File" tab. Under this tab, click "Log Out". 
 
 # Get Help
-For questions or to recieve help with launching JupyterLab, [contact a Research Computing Facilitator](support@osgconnect.net) 
+For questions or to receive help with launching JupyterLab, [contact a Research Computing Facilitator](support@osgconnect.net) 
 
 
 
