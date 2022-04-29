@@ -107,6 +107,7 @@ requirements = Machine == "CHTC-Jupyter-User-EP-$ENV(HOSTNAME)"
 The only modification that needs to be made to these submit file attributes is to replace "ProjectNameinCOManage" with the project name you were assigned when you met with a Research Computing Facilitator. 
 
 Therefore, an example HTCondor submit file for a JupyterLab job may look like: 
+
 ```
 # hello-world.sub
 
@@ -125,7 +126,7 @@ request_disk = 1 GB
 
 requirements = Machine == "CHTC-Jupyter-User-EP-$ENV(HOSTNAME)"
 +ProjectName = "ProjectNameinCOManage"
-+WantInteractiveJupyterEP = true
++FromJupyterLab = true
 
 queue
 ```
