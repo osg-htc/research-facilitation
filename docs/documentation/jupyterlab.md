@@ -1,0 +1,139 @@
+[title]: - "Using JupyterLab to Run HTCondor Jobs"
+
+[TOC]
+
+*Disclaimer: JupyterLab is a new feature currently in development. Contact us at support@opensciencegrid.org to learn more.*
+
+# Objective
+This guide describes how to launch a JupyterLab instance, and how to send JupyterLab jobs to HTCondor. 
+- add in requesting access to COManage
+
+# What is JupyterLab?
+
+JupyterLab is a web-based interface for [Project Jupyter](https://jupyter.org) and  will eventually replace the original web application, Jupyter Notebook. JupyterLab is an interactive environment that supports a variety of computational activities and workflows through features such as notebooks, terminals, text editors, etc.
+
+More information about the JupyterLab interface can be found in the [JupyterLab manual](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html). 
+
+# Steps to Accessing and Working in JupyterLab
+The steps necessary for working in JupyterLab are: 
+- request an account
+- meet with a Research Computing Facilitator for a short introduction to working with JupyterLab and to activate your account
+- launch a JupyterLab instance
+
+
+# Request Access to a JupyterLab Access Point
+
+## Request an Account 
+To request access to a JupyterLab access point, submit an application using the following steps:
+
+(1) Go to the [registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:261).You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. 
+
+If you have issues signing in using your institutional credentials, contact us at support@opensciencegrid.org.
+
+(2) Once you sign in, you will be redirected to the "JupyterLab User Enrollment for New Users" page. Click "Begin" and enter your name, and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT". 
+
+(3) After submitting your application, you will receive an email from registry@cilogon.org to verify your email address. Click the link listed in the email to be redirected to a COManagepage confirm your invitation details. Click the "ACCEPT" button to complete this step. 
+
+
+## Meet with a Research Computing Facilitator
+
+Once OSG staff receive your email verification, a Research Computing Facilitator will contact you within one business day to arrange a short consultation and introduction to the JupyterLab resources. During this meeting, our staff will provide personalized start-up guidance per your specific computational research goals and activate your account.
+You will be notified when your account is approved via email.
+
+Additionally, you will be assigned a "ProjectName" that you can use later in an HTCondor Submit file to submit jobs through your JupyterLab interface to HTCondor. 
+
+
+## Upload an SSH Key
+
+Adding an SSH public key is optional. Contact us to discuss alternative ways to authenticate when logging in.
+
+After your account has been approved following a meeting with a Research Computing Facilitator, the last step of account creation is to add an SSH key. To do this:
+
+(1) Return to the Registration Page and login using CILogon if prompted.
+
+(2) Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button. 
+
+(3) On the right hand side of your profile, click "Authenticators" link. 
+
+(4) On the authenticators page, click the "Manage" button. 
+
+(5) On the new SSH Keys page, click "Add SSH Key" and browse your computer to upload your public SSH key.
+
+
+
+# How to launch a JupyterLab Instance
+
+To launch a JupyterLab instance, go to [https://jupyterhub.osgdev.chtc.io/](https://jupyterhub.osgdev.chtc.io/) using an internet browser. 
+
+You will be prompted to "Sign in" using your institution CILogin credentials.
+
+Once logged in, you will be automatically redirected to the "Server Options" page. Several server options are listed, including:
+
+| Notebook Server Options      | Description |
+| ----------- | ----------- |
+| Minimal      | Includes basic command-line tools.      |
+| R    | Includes the R interpreter and base environment.   |
+| SciPy      | Includes popular packages from the scientific Python ecosystem.       |
+| TensorFlow    | Includes popular Python deep learning libraries.  |
+| Data Sciencde      | Includes libraries for data analysis from the Julia, Python, and R communities.       |
+| PySpark    | Includes Python support for Apache Spark.  |
+| All Spark      | Includes Python, R, and Scala support for Apache Spark.      |
+
+
+ Additional pre-configured server options will be released in the future. To request a specific server configuration, [contact a Research Computing Facilitator](support@osgconnect.net). 
+
+Select your desirerdd server option and click "Start" to launch your instance. This process may take several minutes to complete. You will be redirected automatically to JupyterLab when your instance is ready.
+
+# Working within your JupyterLab Instance
+
+Working in JupyterLab, you will be able to interact with files in your /home directory, execute code, and save files.
+
+
+# Sending jobs to HTCondor from within the JupyterLab Interface
+
+It is possible to send jobs to HTCondor to run on a personal execute point that is dedicated to your JupyterLab jobs. Each user has a *total* of ___ CPUs, ___ memory, and ___ disk space available to their jobs. 
+
+To send JupyterLab jobs to HTCondor, the following information must be added to the HTCondor submit file with one modification: 
+
+```
+# The `requirements = ` line tells HTCondor to assign all jobs to run on the dedicated execute point server assigned to your instance upon launch. This will allow your jobs to start almost immediately. 
+requirements = Machine == "CHTC-Jupyter-User-EP-$ENV(HOSTNAME)"
+
+# Sets a Project Name for this job submission 
++ProjectName = "ProjectNameinCOManage"
+
+# 
++WantInteractiveJupyterEP = true
+```
+
+The only modification that needs to be made to these submit file attributes is to replace "ProjectNameinCOManage" with the project name you were assigned when you met with a Research Computing Facilitator. 
+
+Therefor, an example HTCondor submit file for a JupyterLab job may look like: 
+```
+# hello-world.sub
+
+executable = hello-world.sh
+# arguments = 
+
+log = hello-world.log
+output = hello-world.out
+error = hello-world.err
+
+# transfer_input_files = file1, /path/to/file2
+
+request_cpus = 1
+request_memory = 1 GB
+request_disk = 1 GB
+
+requirements = Machine == "CHTC-Jupyter-User-EP-$ENV(HOSTNAME)"
++ProjectName = "ProjectNameinCOManage"
++WantInteractiveJupyterEP = true
+
+queue
+```
+
+# Log Out of JupyterLab Session
+To log out of your session, go to the top left corner of the JupterLab interface and click the "File" tab. Under this tab, click "Log Out". 
+
+# Get Help
+For questions or to recieve help with launching JupyterLab, [contact a Research Computing Facilitator](support@osgconnect.net) 
