@@ -8,7 +8,7 @@
 
 # Objective
 
-This guide describes how to request an account to access JupyterLab, launch a JupyterLab instance, and how to send JupyterLab jobs to HTCondor. 
+This guide describes how to request an account to access JupyterLab, launch a JupyterLab instance, and how to send jobs from JupyterLab to HTCondor. 
 
 
 # What is JupyterLab?
