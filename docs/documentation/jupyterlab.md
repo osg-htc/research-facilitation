@@ -3,7 +3,7 @@
 [TOC]
 
 
-*Disclaimer: JupyterLab is a new feature currently in development. Contact us at support@opensciencegrid.org to learn more.*
+*Disclaimer: JupyterLab is a new feature. We appreciate thoughts and feedback sent to support@opensciencegrid.org*
 
 
 # Objective
