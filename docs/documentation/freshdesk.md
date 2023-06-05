@@ -14,7 +14,7 @@ Relevant links:
 * Documentation repository: https://github.com/OSGConnect/connectbook
 * Freshdesk solutions: https://support.opensciencegrid.org/a/solutions/
 * Rendered Docs: https://support.opensciencegrid.org/support/home
-* Style guide: https://opensciencegrid.org/technology/documentation/style-guide/ 
+* Style guide: https://osg-htc.org/technology/documentation/style-guide/ 
 
 ## Adding a Document
 
